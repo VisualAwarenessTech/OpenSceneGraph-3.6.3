@@ -222,7 +222,7 @@ toff_t libtiffOStreamSeekProc(thandle_t fd, toff_t off, int i)
         // position required past the end of the stream so we need to insert extra characters to
         // ensure the stream is big enough to encompass the new the position.
         fout->seekp(0, std::ios::end);
-        for(toff_t is=stream_end; is<pos_required; ++is)
+        for(toff_t ii=stream_end; ii<pos_required; ++ii)
         {
             fout->put(char(0));
         }
@@ -332,15 +332,20 @@ checkcmap(int n, uint16* r, uint16* g, uint16* b)
 }
 
 static void
-invert_row(unsigned char *ptr, unsigned char *data, int n, int invert, uint16 bitspersample)
+invert_row(unsigned char *ptr, unsigned char *data, int n1, int invert, uint16 bitspersample)
 {
     // OSG_NOTICE<<"invert_row "<<invert<<std::endl;
+	int n = n1;
     if (bitspersample == 8)
     {
+		unsigned char * ptr1 = ptr;
+		unsigned char * data1 = data;
         while (n--)
         {
-            if (invert) *ptr++ = 255 - *data++;
-            else *ptr++ = *data++;
+            if (invert) 
+				*ptr1++ = 255 - *data1++;
+            else 
+				*ptr1++ = *data1++;
         }
     }
     else if (bitspersample == 16)
@@ -642,13 +647,16 @@ simage_tiff_load(std::istream& fin,
     }
 
     // initialize memory
-    for(unsigned char* ptr=buffer;ptr<buffer+w*h*format;++ptr) *ptr = 0;
+    for(unsigned char* ptr=buffer; ptr<buffer+w*h*format; ++ptr) 
+		*ptr = 0;
 
     width = w;
     height = h;
 
-    currPtr = buffer + (h-1)*w*format;
-
+    currPtr = buffer + (h - 1) * w * format;
+#ifdef _DEBUG
+	unsigned char * startPtr = currPtr;
+#endif
     tifferror = ERR_NO_ERROR;
 
     switch (pack(photometric, config))
@@ -657,33 +665,30 @@ simage_tiff_load(std::istream& fin,
         case pack(PHOTOMETRIC_MINISBLACK, PLANARCONFIG_CONTIG):
         case pack(PHOTOMETRIC_MINISWHITE, PLANARCONFIG_SEPARATE):
         case pack(PHOTOMETRIC_MINISBLACK, PLANARCONFIG_SEPARATE):
-            inbuf = new unsigned char [TIFFScanlineSize(in)];
-            for (row = 0; row < h; row++)
-            {
-                if (TIFFReadScanline(in, inbuf, row, 0) < 0)
-                {
-                    tifferror = ERR_READ;
-                    break;
-                }
-                invert_row(currPtr, inbuf, samplesperpixel*w, photometric == PHOTOMETRIC_MINISWHITE, bitspersample);
-                currPtr -= format*w;
-            }
-            break;
-
+		{
+			int scanlinesize = TIFFScanlineSize(in);
+			inbuf = new unsigned char[scanlinesize * samplesperpixel];
+			for (row = 0; row < h; row++)
+			{
+				if (TIFFReadScanline(in, inbuf, row, 0) < 0)
+				{
+					tifferror = ERR_READ;
+					break;
+				}
+				invert_row(currPtr, inbuf, samplesperpixel * w, photometric == PHOTOMETRIC_MINISWHITE, bitspersample);
+				currPtr -= format * w;
+			}
+			break;
+		}
         case pack(PHOTOMETRIC_PALETTE, PLANARCONFIG_CONTIG):
         case pack(PHOTOMETRIC_PALETTE, PLANARCONFIG_SEPARATE):
-
             if (TIFFGetField(in, TIFFTAG_COLORMAP, &red, &green, &blue) != 1)
-            {
                 tifferror = ERR_READ;
-                break;
-            }
-
             /* */
             /* Convert 16-bit colormap to 8-bit (unless it looks */
             /* like an old-style 8-bit colormap). */
             /* */
-            if (!tifferror && bitspersample!=32 && checkcmap(1<<bitspersample, red, green, blue) == 16)
+            if (!tifferror && checkcmap(1<<bitspersample, red, green, blue) == 16)
             {
                 int i;
                 for (i = (1<<bitspersample)-1; i >= 0; i--)

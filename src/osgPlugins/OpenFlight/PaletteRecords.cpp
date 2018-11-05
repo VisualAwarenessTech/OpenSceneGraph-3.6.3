@@ -329,9 +329,13 @@ protected:
         return osgWrapMode;
     }
 
-    osg::StateSet* readTexture(const std::string& filename, const Document& document) const
+    osg::StateSet* readTexture(const std::string& filename, Document& document) const
     {
-        osg::ref_ptr<osg::Image> image = osgDB::readRefImageFile(filename,document.getOptions());
+		osg::ref_ptr<osg::Image> image;
+		if (document.getTextureInArchive())
+			image = document.readArchiveImage(filename);
+		else
+			image = osgDB::readRefImageFile(filename, document.getOptions());
         if (!image) return NULL;
 
         // Create stateset to hold texture and attributes.
@@ -487,8 +491,35 @@ protected:
         /*int32 y =*/ in.readInt32();
 
         // Need full path for unique key in local texture cache.
-        std::string pathname = osgDB::findDataFile(filename,document.getOptions());
-        if (pathname.empty())
+		std::string pathname;
+		if (document.getTextureInArchive())
+		{
+			std::string archivePath = filename;
+			if (document.MapTextureName2Archive(archivePath))
+			{
+				pathname = document.archive_findDataFile(archivePath);
+				if(pathname.empty())
+					pathname = osgDB::findDataFile(filename, document.getOptions());
+				if(pathname.empty())
+					OSG_WARN << "Texture File " << filename << " " << archivePath <<" not found GT Tex or in archive" << std::endl;
+			}
+			else
+				pathname = osgDB::findDataFile(filename, document.getOptions());;
+		}
+		else if (document.getRemap2Directory())
+		{
+			if (document.MapTextureName2Directory(filename))
+			{
+				pathname = filename;
+			}
+			else
+				pathname = "";
+
+		}
+		else
+			pathname = osgDB::findDataFile(filename,document.getOptions());
+ 
+		if (pathname.empty())
         {
             OSG_WARN << "Can't find texture (" << index << ") " << filename << std::endl;
             return;

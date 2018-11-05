@@ -46,7 +46,13 @@ Document::Document() :
     _lightSourcePoolParent(false),
     _lightPointAppearancePoolParent(false),
     _lightPointAnimationPoolParent(false),
-    _shaderPoolParent(false)
+    _shaderPoolParent(false),
+	_textureInarchive(false),
+	_remap2Directory(false),
+	_Archive(NULL),
+	_Archive_FileName(""),
+	_Archive_KeyName(""),
+	_TextureRemapDirectory("")
 {
     _subsurfaceDepth = new osg::Depth(osg::Depth::LESS, 0.0, 1.0,false);
 }
@@ -128,6 +134,191 @@ osg::PolygonOffset* Document::getSubSurfacePolygonOffset(int level)
         po = new osg::PolygonOffset(-1.0f*float(level), -1.0f);
     }
     return po.get();
+}
+
+bool Document::OpenArchive(std::string ArchiveName)
+{
+	_Archive = osgDB::openArchive(ArchiveName, osgDB::ReaderWriter::READ);
+	if (_Archive)
+	{
+		_Archive->getFileNames(_Archive_FileList);
+		_Archive_FileName = ArchiveName;
+		if (_Archive_FileName.substr(0, 5) == "gpkg:")
+		{
+			size_t posx = _Archive_FileName.find("GTModel");
+			if (posx == std::string::npos)
+			{
+
+				if (_Archive_FileList.size() > 0)
+				{
+					std::string temp = _Archive_FileList[0];
+					size_t pos0 = temp.find_first_of("/");
+					if (pos0 != std::string::npos)
+						temp = temp.substr(pos0 + 1);
+					size_t pos = temp.find("_R");
+					if (pos != std::string::npos)
+					{
+						_Archive_KeyName = temp.substr(0, pos);
+						size_t pos2 = temp.substr(pos + 1).find_first_of("_");
+						if (pos2 != std::string::npos)
+						{
+							_Archive_KeyName += temp.substr(pos, pos2 + 1);
+						}
+					}
+				}
+			}
+		}
+		else
+		{
+			size_t pos = _Archive_FileName.rfind(".");
+			if (pos != std::string::npos)
+			{
+				_Archive_KeyName = _Archive_FileName.substr(0, pos);
+				size_t pos2 = _Archive_KeyName.rfind("\\");
+				if ((pos2 != std::string::npos) && (pos2 + 1 < _Archive_KeyName.length()))
+				{
+					_Archive_KeyName = _Archive_KeyName.substr(pos2 + 1);
+				}
+			}
+			else
+				_Archive_KeyName = _Archive_FileName;
+		}
+		_Archive->getFileNames(_Archive_FileList);
+		return true;
+	}
+	return false;
+}
+
+bool Document::SetTexture2MapDirectory(std::string DirectoryName, std::string ModelName)
+{
+	_TextureRemapDirectory = DirectoryName;
+	size_t pos = ModelName.rfind("\\");
+	bool ret = false;
+	if ((pos != std::string::npos) && (pos + 1 < ModelName.length()))
+	{
+		_Archive_KeyName = ModelName.substr(pos+1);
+		size_t pos2 = _Archive_KeyName.find("_R");
+		if ((pos2 != std::string::npos) && (pos2 + 1 < _Archive_KeyName.length()))
+		{
+			size_t pos3 = _Archive_KeyName.substr(pos2 + 1).find("_");
+			if (pos3 != std::string::npos)
+			{
+				_Archive_KeyName = _Archive_KeyName.substr(0,pos2+pos3+1);
+				size_t pos4 = _Archive_KeyName.find("D300");
+				if (pos4 != std::string::npos)
+				{
+					_Archive_KeyName.replace(pos4, 4, "D301");
+					ret = true;
+				}
+			}
+		}
+	}
+	else
+		_Archive_KeyName = _Archive_FileName;
+	return ret;
+}
+
+bool Document::MapTextureName2Directory(std::string &textureName)
+{
+	if (!_TextureRemapDirectory.empty())
+	{
+		std::string workingname = textureName;
+		size_t fpos = workingname.rfind("\\");
+		if ((fpos != std::string::npos) && (fpos+1 < workingname.length()))
+			workingname = workingname.substr(fpos + 1);
+
+		size_t len = workingname.length();
+		size_t pos = workingname.find("_R");
+		if (pos == std::string::npos || (pos + 1 >= len))
+			return false;
+		size_t pos2 = workingname.substr(pos + 1).find("_");
+		if ((pos2 == std::string::npos) || (pos + pos2 + 1 >= len))
+			return false;
+		std::string base = workingname.substr(pos + pos2 + 1);
+		std::string mappedname = _TextureRemapDirectory;
+		mappedname.append("\\");
+		mappedname.append(_Archive_KeyName);
+		mappedname.append(base);
+		textureName = mappedname;
+		if (osgDB::fileExists(textureName))
+			return true;
+	}
+	return false;
+}
+
+
+bool Document::MapTextureName2Archive(std::string &textureName)
+{
+	if (_Archive)
+	{
+		size_t pos0 = textureName.find("501_GTModelTexture");
+		if (pos0 != std::string::npos)
+		{
+			textureName = textureName.substr(pos0 + 18);
+		}
+		else
+		{
+			size_t len = textureName.length();
+			size_t pos = textureName.find("_R");
+			if (pos == std::string::npos || (pos + 1 >= len))
+				return false;
+			size_t pos2 = textureName.substr(pos + 1).find("_");
+			if ((pos2 == std::string::npos) || (pos + pos2 + 1 >= len))
+				return false;
+			std::string base = textureName.substr(pos + pos2 + 1);
+			size_t iselpos = textureName.find("_D301");
+			std::string mappedname;
+			if (iselpos != std::string::npos && ((iselpos + 15) < len))
+			{
+				std::string inselstring = textureName.substr(iselpos + 5, 11);
+				size_t oselpos = _Archive_KeyName.find("_S001");
+				mappedname = _Archive_KeyName.substr(0, oselpos) + inselstring + _Archive_KeyName.substr(oselpos + 11);
+			}
+			else
+				mappedname = _Archive_KeyName;
+			mappedname.append(base);
+			textureName = mappedname;
+		}
+		return true;
+	}
+	else
+		return false;
+}
+
+std::string  Document::archive_findDataFile(std::string &filename)
+{
+	std::string result = "";
+	for (osgDB::Archive::FileNameList::const_iterator f = _Archive_FileList.begin(); f != _Archive_FileList.end(); ++f)
+	{
+		const std::string comp = *f;
+		if (comp.find(filename) != std::string::npos)
+		{
+			return comp;
+		}
+	}
+	return result;
+}
+
+osg::ref_ptr<osg::Image> Document::readArchiveImage(const std::string filename)
+{
+	if (_Archive)
+	{
+		osgDB::ReaderWriter::ReadResult r = _Archive->readImage(filename, getOptions());
+		if (r.validImage())
+		{
+			r.getImage()->setFileName(filename);
+			return r.getImage();
+		}
+	}
+	return NULL;
+}
+
+void Document::archiveRelease(void)
+{
+	if (_Archive)
+	{
+		_Archive.release();
+	}
 }
 
 double flt::unitsToMeters(CoordUnits unit)

@@ -709,12 +709,23 @@ static LRESULT CALLBACK WindowProc( HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM 
 
 Win32WindowingSystem::OpenGLContext::~OpenGLContext()
 {
-    if (_restorePreviousOnExit && _previousHglrc!=_hglrc && !::wglMakeCurrent(_previousHdc, _previousHglrc))
-    {
-        reportError("Win32WindowingSystem::OpenGLContext() - Unable to restore current OpenGL rendering context", ::GetLastError());
-    }
-
-    _previousHdc   = 0;
+	if (_restorePreviousOnExit && _previousHglrc != _hglrc)
+	{
+		if (_previousHglrc)
+		{
+			if (!::wglMakeCurrent(_previousHdc, _previousHglrc))
+			{
+				reportError("Win32WindowingSystem::OpenGLContext() - Unable to restore current OpenGL rendering context", ::GetLastError());
+			}
+		}
+	}
+#if 0
+	if (_restorePreviousOnExit && _previousHglrc != _hglrc && !::wglMakeCurrent(_previousHdc, _previousHglrc))
+	{
+		reportError("Win32WindowingSystem::OpenGLContext() - Unable to restore current OpenGL rendering context", ::GetLastError());
+	}
+#endif
+	_previousHdc   = 0;
     _previousHglrc = 0;
 
     if (_hglrc)
@@ -1310,19 +1321,20 @@ void GraphicsWindowWin32::init()
     _initialized = _ownsWindow ? createWindow() : setWindow(windowHandle);
     _valid       = _initialized;
 
-    int windowX = 0, windowY = 0, windowWidth = 0, windowHeight = 0;
-    if (_traits.valid())
-    {
-        windowX = _traits->x;
-        windowY = _traits->y;
-        windowWidth = _traits->width;
-        windowHeight = _traits->height;
-    }
 
-    if (areWindowDimensionsChanged(_hwnd, _screenOriginX, _screenOriginY, windowX, windowY, windowWidth, windowHeight))
-    {
-        resized(windowX, windowY, windowWidth, windowHeight);
-    }
+	if (_ownsWindow)
+	{
+		int windowX = _traits->x;
+		int windowY = _traits->y;
+		int windowWidth = _traits->width;
+		int windowHeight = _traits->height;
+
+		if (areWindowDimensionsChanged(_hwnd, _screenOriginX, _screenOriginY, windowX, windowY, windowWidth, windowHeight))
+		{
+			resized(windowX, windowY, windowWidth, windowHeight);
+		}
+	}
+
 
     // make sure the event queue has the correct window rectangle size and input range
     getEventQueue()->syncWindowRectangleWithGraphicsContext();

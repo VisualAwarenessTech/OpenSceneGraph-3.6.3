@@ -27,6 +27,7 @@
 #include <osg/PolygonOffset>
 #include <osg/Depth>
 #include <osgDB/ReaderWriter>
+#include <osgDB/Archive>
 #include <osgDB/Options>
 
 #include "Types.h"
@@ -199,11 +200,27 @@ class Document
         void setKeepExternalReferences( bool flag) { _keepExternalReferences=flag; }
         bool getKeepExternalReferences() const { return _keepExternalReferences; }
 
-        void setReadObjectRecordData(bool flag) { _readObjectRecordData = flag; }
+		//Option requred to read Common Database (CDB) model as per specification
+		void setTextureInArchive(bool flag) { _textureInarchive = flag; }
+		bool getTextureInArchive() const { return _textureInarchive; }
+		//Option for in production Common Database (CDB) (models and textures not in archives)
+		void setRemap2Directory(bool flag) { _remap2Directory = flag; }
+		bool getRemap2Directory() const { return _remap2Directory; }
+
+		void setReadObjectRecordData(bool flag) { _readObjectRecordData = flag; }
         bool getReadObjectRecordData() const { return _readObjectRecordData; }
 
         void setPreserveNonOsgAttrsAsUserData(bool flag) { _preserveNonOsgAttrsAsUserData = flag; }
         bool getPreserveNonOsgAttrsAsUserData() const { return _preserveNonOsgAttrsAsUserData; }
+
+		//Common DataBase (CDB) support functions
+		bool OpenArchive(std::string ArchiveName);
+		bool MapTextureName2Archive(std::string &textureName);
+		std::string  archive_findDataFile(std::string &filename);
+		osg::ref_ptr<osg::Image> readArchiveImage(const std::string filename);
+		void archiveRelease(void);
+		bool SetTexture2MapDirectory(std::string DirectoryName, std::string ModelName);
+		bool MapTextureName2Directory(std::string &textureName);
 
     protected:
 
@@ -219,9 +236,17 @@ class Document
         bool                        _doUnitsConversion;
         bool                        _readObjectRecordData;
         bool                        _preserveNonOsgAttrsAsUserData;
+		bool						_textureInarchive;
+		bool						_remap2Directory;
         CoordUnits                  _desiredUnits;
 
         bool                        _keepExternalReferences;
+
+		osg::ref_ptr<osgDB::Archive> _Archive;
+		std::string					 _Archive_FileName;
+		std::string					 _Archive_KeyName;
+		osgDB::Archive::FileNameList _Archive_FileList;
+		std::string					 _TextureRemapDirectory;
 
         friend class Header;
         bool _done;

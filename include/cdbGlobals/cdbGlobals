@@ -1,0 +1,170 @@
+#pragma once
+// Copyright (c) 2016-2017 Visual Awareness Technologies and Consulting Inc, St Petersburg FL
+// This file is based on the Common Database (CDB) Specification for USSOCOM
+// Version 3.0 – October 2008
+
+// CDB_Tile is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// CDB_Tile is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Lesser General Public License for more details.
+
+// You should have received a copy of the GNU Lesser General Public License
+// along with CDB_Tile.  If not, see <http://www.gnu.org/licenses/>.
+
+// 2015 GAJ Geospatial Enterprises, Orlando FL
+// Modified for General Incorporation of Common Database (CDB) support within osgEarth
+//
+#include "cdbglobals/cdbGlobals_Library.h"
+#include <sstream>
+#include <iomanip>
+#include <vector>
+#include <map>
+
+#ifdef _MSC_VER
+#if _MSC_VER < 1800
+#define round osg::round
+#endif
+#endif
+
+class GDALDataset;
+struct sqlite3;
+
+struct GSMediaKeyStruct
+{
+	int	LODNum;
+	int	UrefNum;
+	int	RrefNum;
+	GSMediaKeyStruct(int lod, int uref, int rref) : LODNum(lod), UrefNum(uref), RrefNum(rref)
+	{
+	};
+	GSMediaKeyStruct() : LODNum(-1), UrefNum(-1), RrefNum(-1)
+	{
+	};
+	bool operator==(GSMediaKeyStruct &keyvalue)
+	{
+		if ((LODNum == keyvalue.LODNum) &&
+			(UrefNum == keyvalue.UrefNum) &&
+			(RrefNum == keyvalue.RrefNum))
+			return true;
+		else
+			return false;
+	}
+	bool operator>(GSMediaKeyStruct &keyvalue)
+	{
+		if (keyvalue.LODNum == LODNum)
+		{
+			if (keyvalue.UrefNum == UrefNum)
+			{
+				if (keyvalue.RrefNum == RrefNum)
+					return false;
+				else
+					return keyvalue.RrefNum > RrefNum;
+			}
+			else
+				return keyvalue.UrefNum > UrefNum;
+		}
+		else
+			return keyvalue.LODNum > LODNum;
+	}
+	bool operator<(GSMediaKeyStruct &keyvalue)
+	{
+		if (keyvalue.LODNum == LODNum)
+		{
+			if (keyvalue.UrefNum == UrefNum)
+			{
+				if (keyvalue.RrefNum == RrefNum)
+					return false;
+				else
+					return keyvalue.RrefNum < RrefNum;
+			}
+			else
+				return keyvalue.UrefNum < UrefNum;
+		}
+		else
+			return keyvalue.LODNum < LODNum;
+	}
+	std::string ToString(void)
+	{
+		std::string KeyString = std::to_string(LODNum) + "_" + std::to_string(UrefNum) + "_" + std::to_string(RrefNum);
+		return KeyString;
+	}
+
+};
+typedef GSMediaKeyStruct GSMediaKey;
+
+struct GSMediaMemoryStruct
+{
+	char * bufferdata;
+	int	   bufsize;
+	GSMediaMemoryStruct() : bufferdata(NULL), bufsize(0)
+	{
+	};
+};
+typedef GSMediaMemoryStruct GSMediaMemory;
+
+
+typedef enum
+{
+	GSGeometry = 0,
+	GSTexture = 1,
+	GTGeometry = 2,
+	GTTexture = 3,
+	GSInvalid = 4,
+}GSTableType;
+
+class CDBGLOBALLIBRARYAPI CDB_Global
+{
+public:
+
+	CDB_Global();
+	~CDB_Global();
+
+	void Set_BaseMapLodNum(int num);
+	int BaseMapLodNum(void);
+	void Set_EnableBathymetry(bool value);
+	bool EnableBathymetry(void);
+	void Set_LOD0_GS_FullStack(bool value);
+	bool LOD0_GS_FullStack(void);
+	void Set_LOD0_GT_FullStack(bool value);
+	bool LOD0_GT_FullStack(void);
+	void Set_CDB_Tile_Be_Verbose(bool value);
+	bool CDB_Tile_Be_Verbose(void);
+	bool Open_Vector_File(std::string FileName);
+	GDALDataset * Get_Dataset(void);
+	bool Has_Layer(std::string LayerName);
+	bool Load_Media(const std::string MediaId);
+	bool Get_Media(const std::string &mediaId, std::stringstream &fin);
+	void Check_Done(void);
+
+	static CDB_Global * getInstance(void);
+
+private:
+
+	int s_BaseMapLodNum;
+	bool s_EnableBathymetry;
+	bool s_LOD0_GS_FullStack;
+	bool s_LOD0_GT_FullStack;
+	bool s_CDB_Tile_Be_Verbose;
+
+	GDALDataset *	m_ogrDataset;
+
+	std::map<std::string, GSMediaMemory> m_GSGeometryMap;
+	std::map<std::string, GSMediaMemory> m_GSTextureMap;
+
+	GSMediaMemory m_GTGeometry;
+	GSMediaMemory m_GTTexture;
+
+	std::vector<std::string> m_doneList;
+
+	bool ParseGSKey(const std::string &mediaId, GSMediaKey &Key, std::string &gpkgtablename, GSTableType &TableType);
+
+	bool Add_Media_to_Map(GSMediaKey MyKey, std::string gpkgTableName, GSTableType TableType);
+
+
+};
+

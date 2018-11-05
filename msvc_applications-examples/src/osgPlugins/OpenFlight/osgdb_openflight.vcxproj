@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{485E1659-949F-4BDC-B4DD-DB7075B17CDA}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>Plugins openflight</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">osgdb_openflightd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">osgdb_openflight</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR="Debug";osgdb_openflight_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\";osgdb_openflight_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;osgSimd.lib;opengl32.lib;osgTextd.lib;osgDBd.lib;zlib.lib;osgUtild.lib;osgd.lib;OpenThreadsd.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)osgdb_openflightd.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR="Release";osgdb_openflight_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"Release\";osgdb_openflight_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;osgSim.lib;opengl32.lib;osgText.lib;osgDB.lib;zlib.lib;osgUtil.lib;osg.lib;OpenThreads.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)osgdb_openflight.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\osgPlugins\OpenFlight\AttrData.h" />
+    <ClInclude Include="..\..\..\..\src\osgPlugins\OpenFlight\DataInputStream.h" />
+    <ClInclude Include="..\..\..\..\src\osgPlugins\OpenFlight\DataOutputStream.h" />
+    <ClInclude Include="..\..\..\..\src\osgPlugins\OpenFlight\ExportOptions.h" />
+    <ClInclude Include="..\..\..\..\src\osgPlugins\OpenFlight\FltExportVisitor.h" />
+    <ClInclude Include="..\..\..\..\src\osgPlugins\OpenFlight\FltWriteResult.h" />
+    <ClInclude Include="..\..\..\..\src\osgPlugins\OpenFlight\Document.h" />
+    <ClInclude Include="..\..\..\..\src\osgPlugins\OpenFlight\LightSourcePaletteManager.h" />
+    <ClInclude Include="..\..\..\..\src\osgPlugins\OpenFlight\MaterialPaletteManager.h" />
+    <ClInclude Include="..\..\..\..\src\osgPlugins\OpenFlight\Pools.h" />
+    <ClInclude Include="..\..\..\..\src\osgPlugins\OpenFlight\Record.h" />
+    <ClInclude Include="..\..\..\..\src\osgPlugins\OpenFlight\RecordInputStream.h" />
+    <ClInclude Include="..\..\..\..\src\osgPlugins\OpenFlight\Registry.h" />
+    <ClInclude Include="..\..\..\..\src\osgPlugins\OpenFlight\TexturePaletteManager.h" />
+    <ClInclude Include="..\..\..\..\src\osgPlugins\OpenFlight\Vertex.h" />
+    <ClInclude Include="..\..\..\..\src\osgPlugins\OpenFlight\VertexPaletteManager.h" />
+    <ClInclude Include="..\..\..\..\src\osgPlugins\OpenFlight\Opcodes.h" />
+    <ClInclude Include="..\..\..\..\src\osgPlugins\OpenFlight\Types.h" />
+    <ClInclude Include="..\..\..\..\src\osgPlugins\OpenFlight\Utils.h" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\AncillaryRecords.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\AttrData.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\ControlRecords.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\DataInputStream.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\DataOutputStream.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\Document.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\expAncillaryRecords.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\expControlRecords.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\expGeometryRecords.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\expPrimaryRecords.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\ExportOptions.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\FltExportVisitor.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\GeometryRecords.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\LightPointRecords.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\LightSourcePaletteManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\MaterialPaletteManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\PaletteRecords.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\Pools.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\PrimaryRecords.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\ReaderWriterATTR.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\ReaderWriterFLT.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\Record.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\RecordInputStream.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\Registry.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\ReservedRecords.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\RoadRecords.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\TexturePaletteManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\Vertex.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\VertexPaletteManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\osgPlugins\OpenFlight\VertexRecords.cpp" />
+    <ResourceCompile Include="..\..\..\PlatformSpecifics\Windows\OpenSceneGraphVersionInfo.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\OpenThreads\win32\OpenThreads.vcxproj">
+      <Project>76E843B0-1573-44DD-AEE5-24FDA3AC751A</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\osg\osg.vcxproj">
+      <Project>E97A06EA-2E0B-4EC2-BD5E-3565D39D235C</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\osgDB\osgDB.vcxproj">
+      <Project>01234B51-0E5E-4132-AE72-1BF14DBE7F97</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\osgSim\osgSim.vcxproj">
+      <Project>8C3BB897-1924-4DCE-97BC-4620F8D33EB9</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\osgText\osgText.vcxproj">
+      <Project>DE44FF30-BBAD-44BC-A3E9-715DE61F9462</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\osgUtil\osgUtil.vcxproj">
+      <Project>D6C1FAD9-EF16-4C63-B52A-1DE420EF042F</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
