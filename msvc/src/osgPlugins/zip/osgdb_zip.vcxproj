@@ -243,7 +243,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zipd.lib</ImportLibrary>
@@ -288,7 +288,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zipd.lib</ImportLibrary>
@@ -333,7 +333,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zipd.lib</ImportLibrary>
@@ -378,7 +378,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zipd.lib</ImportLibrary>
@@ -423,7 +423,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zipd.lib</ImportLibrary>
@@ -468,7 +468,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobalsd.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;opengl32.lib;osgd.lib;OpenThreadsd.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zipd.lib</ImportLibrary>
@@ -513,7 +513,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zip.lib</ImportLibrary>
@@ -558,7 +558,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zip.lib</ImportLibrary>
@@ -603,7 +603,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zip.lib</ImportLibrary>
@@ -648,7 +648,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zip.lib</ImportLibrary>
@@ -693,7 +693,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zip.lib</ImportLibrary>
@@ -738,7 +738,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;cdbGlobals.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;opengl32.lib;osg.lib;OpenThreads.lib;zlib.lib;opengl32.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_zip.lib</ImportLibrary>

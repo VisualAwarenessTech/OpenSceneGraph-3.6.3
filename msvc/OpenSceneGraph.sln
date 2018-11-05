@@ -1034,6 +1034,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{7270ADED-7037-4F08-9287-1C54F49B98D6}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cdbGlobals", "src\cdbGlobals\cdbGlobals.vcxproj", "{FCB18B94-BDFE-45B5-882B-52E5CF3C839A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{01234B51-0E5E-4132-AE72-1BF14DBE7F97} = {01234B51-0E5E-4132-AE72-1BF14DBE7F97}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -3898,5 +3901,8 @@ Global
 		{8A4FF7EA-E7F4-4754-BEBD-ACCADC461178} = {7270ADED-7037-4F08-9287-1C54F49B98D6}
 		{D3CD616D-8D02-46DE-9A00-D10EECD23343} = {7270ADED-7037-4F08-9287-1C54F49B98D6}
 		{FCB18B94-BDFE-45B5-882B-52E5CF3C839A} = {43EAB437-D7D4-41CD-A2D2-980C16278D10}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2462503E-5718-45DF-B5C3-8F88CE0F13A9}
 	EndGlobalSection
 EndGlobal
