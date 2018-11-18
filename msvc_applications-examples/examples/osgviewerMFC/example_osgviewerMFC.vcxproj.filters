@@ -50,9 +50,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\..\..\examples\osgviewerMFC\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ResourceCompile Include="..\..\..\examples\osgviewerMFC\MFC_OSG_MDI.rc">
       <Filter>Source Files</Filter>
     </ResourceCompile>
