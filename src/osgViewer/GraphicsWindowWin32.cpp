@@ -709,23 +709,12 @@ static LRESULT CALLBACK WindowProc( HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM 
 
 Win32WindowingSystem::OpenGLContext::~OpenGLContext()
 {
-	if (_restorePreviousOnExit && _previousHglrc != _hglrc)
-	{
-		if (_previousHglrc)
-		{
-			if (!::wglMakeCurrent(_previousHdc, _previousHglrc))
-			{
-				reportError("Win32WindowingSystem::OpenGLContext() - Unable to restore current OpenGL rendering context", ::GetLastError());
-			}
-		}
-	}
-#if 0
-	if (_restorePreviousOnExit && _previousHglrc != _hglrc && !::wglMakeCurrent(_previousHdc, _previousHglrc))
-	{
-		reportError("Win32WindowingSystem::OpenGLContext() - Unable to restore current OpenGL rendering context", ::GetLastError());
-	}
-#endif
-	_previousHdc   = 0;
+    if (_restorePreviousOnExit && _previousHglrc!=_hglrc && !::wglMakeCurrent(_previousHdc, _previousHglrc))
+    {
+        reportError("Win32WindowingSystem::OpenGLContext() - Unable to restore current OpenGL rendering context", ::GetLastError());
+    }
+
+    _previousHdc   = 0;
     _previousHglrc = 0;
 
     if (_hglrc)
@@ -810,7 +799,7 @@ Win32WindowingSystem::Win32WindowingSystem()
 	if (hModuleShore) {
 		setProcessDpiAwareness = (SetProcessDpiAwarenessFunc *) GetProcAddress(hModuleShore, "SetProcessDpiAwareness");
 		if (setProcessDpiAwareness) {
-			(*setProcessDpiAwareness)(PROCESS_PER_MONITOR_DPI_AWARE);
+			(*setProcessDpiAwareness)(PROCESS_DPI_AWARENESS::PROCESS_PER_MONITOR_DPI_AWARE);
 		}
 	}
 // #endif
@@ -3160,7 +3149,8 @@ static RegisterWindowingSystemInterfaceProxy createWindowingSystemInterfaceProxy
 } // namespace OsgViewer
 
 
-REGISTER_WINDOWINGSYSTEMINTERFACE2(Win32,Win32WindowingSystem,OSGVIEWER_EXPORT)
+extern "C" OSGVIEWER_EXPORT void graphicswindow_Win32(void) {}
+static osg::WindowingSystemInterfaceProxy<Win32WindowingSystem> s_proxy_Win32WindowingSystem("Win32");
 
 void GraphicsWindowWin32::raiseWindow()
 {

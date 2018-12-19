@@ -36,7 +36,6 @@
 
 #include <set>
 #include <algorithm>
-#include <sstream>
 
 using namespace osg;
 
@@ -140,7 +139,7 @@ class TextureGLModeSet
             _textureModeSet.insert(GL_TEXTURE_BUFFER);
 
             _textureModeSet.insert(GL_TEXTURE_CUBE_MAP);
-            _textureModeSet.insert(GL_TEXTURE_RECTANGLE);
+            _textureModeSet.insert(GL_TEXTURE_RECTANGLE_NV);
             _textureModeSet.insert(GL_TEXTURE_2D_ARRAY);
             _textureModeSet.insert(GL_TEXTURE_2D_MULTISAMPLE);
 
@@ -257,7 +256,7 @@ StateSet::StateSet(const StateSet& rhs,const CopyOp& copyop):Object(rhs,copyop),
     {
         const std::string& name = rhs_uitr->first;
         const RefUniformPair& rup = rhs_uitr->second;
-        UniformBase* uni = copyop(rup.first.get());
+        Uniform* uni = copyop(rup.first.get());
         if (uni)
         {
             _uniformList[name] = RefUniformPair(uni, rup.second);
@@ -693,107 +692,29 @@ void StateSet::setGlobalDefaults()
 
     OSG_INFO<<"void StateSet::setGlobalDefaults()"<<std::endl;
 
-    if (DisplaySettings::instance()->getShaderPipeline())
+    osg::DisplaySettings::ShaderHint shaderHint = osg::DisplaySettings::instance()->getShaderHint();
+    if (shaderHint==osg::DisplaySettings::SHADER_GL3 || shaderHint==osg::DisplaySettings::SHADER_GLES3)
     {
+        OSG_INFO<<"   StateSet::setGlobalDefaults() Setting up GL3 compatible shaders"<<std::endl;
+
         osg::ref_ptr<osg::Program> program = new osg::Program;
-
-        const DisplaySettings::Filenames& files = DisplaySettings::instance()->getShaderPipelineFiles();
-        if (!files.empty())
-        {
-            for(DisplaySettings::Filenames::const_iterator itr = files.begin();
-                itr != files.end();
-                ++itr)
-            {
-                // look up object for specified filename - this will be preloaded by osgDB::Registry
-                osg::Object* object = DisplaySettings::instance()->getObject(*itr);
-                osg::Shader* shader = dynamic_cast<osg::Shader*>(object);
-                if (shader)
-                {
-                    program->addShader(shader);
-                }
-            }
-        }
-
-        if (program->getNumShaders()==0)
-        {
-            OSG_NOTICE<<"void StateSet::setGlobalDefaults() ShaderPipeline enabled, numTextUnits = "<<DisplaySettings::instance()->getShaderPipelineNumTextureUnits()<<std::endl;
-
-            #include "shaders/shaderpipeline_vert.cpp"
-            program->addShader( new osg::Shader(osg::Shader::VERTEX, shaderpipeline_vert) );
-
-
-            #include "shaders/shaderpipeline_frag.cpp"
-            program->addShader( new osg::Shader(osg::Shader::FRAGMENT, shaderpipeline_frag) );
-        }
-
-        if (program->getNumShaders()!=0)
-        {
-            unsigned int maxTextureUnits = DisplaySettings::instance()->getShaderPipelineNumTextureUnits();
-
-            std::stringstream sstream;
-            sstream<<maxTextureUnits;
-            setDefine("GL_MAX_TEXTURE_UNITS", sstream.str());
-
-            #define ADD_DEFINE(DEF) \
-                sstream.str(""); \
-                sstream<<DEF; \
-                setDefine(#DEF, sstream.str());
-
-            if (maxTextureUnits>0)
-            {
-                osg::ref_ptr<osg::Texture2D> fallbackTexture = createDefaultTexture();
-                fallbackTexture->setWrap(osg::Texture2D::WRAP_S, osg::Texture2D::CLAMP_TO_EDGE);
-                fallbackTexture->setWrap(osg::Texture2D::WRAP_T, osg::Texture2D::CLAMP_TO_EDGE);
-                fallbackTexture->setWrap(osg::Texture2D::WRAP_R, osg::Texture2D::CLAMP_TO_EDGE);
-                fallbackTexture->setFilter(osg::Texture2D::MIN_FILTER, osg::Texture2D::LINEAR);
-                fallbackTexture->setFilter(osg::Texture2D::MAG_FILTER, osg::Texture2D::LINEAR);
-                for(unsigned int i=0; i<maxTextureUnits;++i)
-                {
-                    setTextureAttribute(i, fallbackTexture.get());
-                }
-
-                ADD_DEFINE(GL_ALPHA);
-                ADD_DEFINE(GL_INTENSITY);
-                ADD_DEFINE(GL_LUMINANCE);
-                ADD_DEFINE(GL_RED);
-                ADD_DEFINE(GL_RG);
-                ADD_DEFINE(GL_RGB);
-                ADD_DEFINE(GL_RGBA);
-
-            }
-
-            setAttribute(program.get());
-        }
+        program->addShader(new osg::Shader(osg::Shader::VERTEX, gl3_VertexShader));
+        program->addShader(new osg::Shader(osg::Shader::FRAGMENT, gl3_FragmentShader));
+        setAttributeAndModes(program.get());
+        setTextureAttribute(0, createDefaultTexture());
+        addUniform(new osg::Uniform("baseTexture", 0));
     }
-    else
+    else if (shaderHint==osg::DisplaySettings::SHADER_GL2 || shaderHint==osg::DisplaySettings::SHADER_GLES2)
     {
-        OSG_NOTICE<<"void StateSet::setGlobalDefaults() ShaderPipeline disabled."<<std::endl;
 
         OSG_INFO<<"   StateSet::setGlobalDefaults() Setting up GL2 compatible shaders"<<std::endl;
 
-        osg::DisplaySettings::ShaderHint shaderHint = osg::DisplaySettings::instance()->getShaderHint();
-        if (shaderHint==osg::DisplaySettings::SHADER_GL3 || shaderHint==osg::DisplaySettings::SHADER_GLES3)
-        {
-            OSG_INFO<<"   StateSet::setGlobalDefaults() Setting up GL3 compatible shaders"<<std::endl;
-
-            osg::ref_ptr<osg::Program> program = new osg::Program;
-            program->addShader(new osg::Shader(osg::Shader::VERTEX, gl3_VertexShader));
-            program->addShader(new osg::Shader(osg::Shader::FRAGMENT, gl3_FragmentShader));
-            setAttributeAndModes(program.get());
-            setTextureAttribute(0, createDefaultTexture());
-            addUniform(new osg::Uniform("baseTexture", 0));
-        }
-        else if (shaderHint==osg::DisplaySettings::SHADER_GL2 || shaderHint==osg::DisplaySettings::SHADER_GLES2)
-        {
-
-            OSG_INFO<<"   StateSet::setGlobalDefaults() Setting up GL2 compatible shaders"<<std::endl;
-            osg::ref_ptr<osg::Program> program = new osg::Program;
-            program->addShader(new osg::Shader(osg::Shader::VERTEX, gl2_VertexShader));
-            program->addShader(new osg::Shader(osg::Shader::FRAGMENT, gl2_FragmentShader));
-            setAttributeAndModes(program.get());
-            setTextureAttribute(0, createDefaultTexture());
-            addUniform(new osg::Uniform("baseTexture", 0));
-        }
+        osg::ref_ptr<osg::Program> program = new osg::Program;
+        program->addShader(new osg::Shader(osg::Shader::VERTEX, gl2_VertexShader));
+        program->addShader(new osg::Shader(osg::Shader::FRAGMENT, gl2_FragmentShader));
+        setAttributeAndModes(program.get());
+        setTextureAttribute(0, createDefaultTexture());
+        addUniform(new osg::Uniform("baseTexture", 0));
     }
 }
 
@@ -1234,7 +1155,7 @@ const StateSet::RefAttributePair* StateSet::getAttributePair(StateAttribute::Typ
     return getAttributePair(_attributeList,type,member);
 }
 
-void StateSet::addUniform(UniformBase* uniform, StateAttribute::OverrideValue value)
+void StateSet::addUniform(Uniform* uniform, StateAttribute::OverrideValue value)
 {
     if (uniform)
     {
@@ -1317,7 +1238,7 @@ void StateSet::removeUniform(const std::string& name)
     }
 }
 
-void StateSet::removeUniform(UniformBase* uniform)
+void StateSet::removeUniform(Uniform* uniform)
 {
     if (!uniform) return;
 
@@ -1341,7 +1262,7 @@ void StateSet::removeUniform(UniformBase* uniform)
     }
 }
 
-UniformBase* StateSet::getUniformBase(const std::string& name)
+Uniform* StateSet::getUniform(const std::string& name)
 {
     UniformList::iterator itr = _uniformList.find(name);
     if (itr!=_uniformList.end()) return itr->second.first.get();
@@ -1352,10 +1273,10 @@ Uniform* StateSet::getOrCreateUniform(const std::string& name, Uniform::Type typ
 {
     // for look for an appropriate uniform.
     UniformList::iterator itr = _uniformList.find(name);
-    if (itr!=_uniformList.end())
+    if (itr!=_uniformList.end() &&
+        itr->second.first->getType()==type)
     {
-        Uniform* orig_uniform = dynamic_cast<Uniform*>(itr->second.first.get());
-        if (orig_uniform && orig_uniform->getType()==type) return orig_uniform;
+        return itr->second.first.get();
     }
 
     // no uniform found matching name so create it..
@@ -1367,7 +1288,7 @@ Uniform* StateSet::getOrCreateUniform(const std::string& name, Uniform::Type typ
 }
 
 
-const UniformBase* StateSet::getUniformBase(const std::string& name) const
+const Uniform* StateSet::getUniform(const std::string& name) const
 {
     UniformList::const_iterator itr = _uniformList.find(name);
     if (itr!=_uniformList.end()) return itr->second.first.get();
@@ -1440,10 +1361,8 @@ StateAttribute::GLModeValue StateSet::getTextureMode(unsigned int unit,StateAttr
 {
     if (getTextureGLModeSet().isTextureMode(mode))
     {
-        if (unit >= _textureModeList.size()) 
-			return StateAttribute::INHERIT;
-
-		return getMode(_textureModeList[unit], mode);
+        if (unit>=_textureModeList.size()) return StateAttribute::INHERIT;
+        return getMode(_textureModeList[unit],mode);
     }
     else
     {
@@ -1461,9 +1380,6 @@ void StateSet::setTextureAttribute(unsigned int unit,StateAttribute *attribute, 
     {
         if (attribute->isTextureAttribute())
         {
-            TextureAttribute* ta = dynamic_cast<TextureAttribute*>(attribute);
-            if (ta) ta->setTextureUnit(unit);
-
             setAttribute(getOrCreateTextureAttributeList(unit),attribute,value);
         }
         else
@@ -1490,9 +1406,6 @@ void StateSet::setTextureAttributeAndModes(unsigned int unit,StateAttribute *att
             }
             else
             {
-                TextureAttribute* ta = dynamic_cast<TextureAttribute*>(attribute);
-                if (ta) ta->setTextureUnit(unit);
-
                 setAttribute(getOrCreateTextureAttributeList(unit),attribute,value);
                 setAssociatedTextureModes(unit,attribute,value);
             }
@@ -1567,32 +1480,32 @@ void StateSet::removeTextureAttribute(unsigned int unit, StateAttribute* attribu
 StateAttribute* StateSet::getTextureAttribute(unsigned int unit,StateAttribute::Type type)
 {
     if (unit>=_textureAttributeList.size()) return 0;
-    return getAttribute(_textureAttributeList[unit],type,unit);
+    return getAttribute(_textureAttributeList[unit],type,0);
 }
 
 
 const StateAttribute* StateSet::getTextureAttribute(unsigned int unit,StateAttribute::Type type) const
 {
     if (unit>=_textureAttributeList.size()) return 0;
-    return getAttribute(_textureAttributeList[unit],type,unit);
+    return getAttribute(_textureAttributeList[unit],type,0);
 }
 
 
 StateSet::RefAttributePair* StateSet::getTextureAttributePair(unsigned int unit, StateAttribute::Type type)
 {
     if (unit>=_textureAttributeList.size()) return 0;
-    return getAttributePair(_textureAttributeList[unit],type,unit);
+    return getAttributePair(_textureAttributeList[unit],type,0);
 }
 
 const StateSet::RefAttributePair* StateSet::getTextureAttributePair(unsigned int unit, StateAttribute::Type type) const
 {
     if (unit>=_textureAttributeList.size()) return 0;
-    return getAttributePair(_textureAttributeList[unit],type,unit);
+    return getAttributePair(_textureAttributeList[unit],type,0);
 }
 
 bool StateSet::checkValidityOfAssociatedModes(osg::State& state) const
 {
-    //OSG_NOTICE<<__PRETTY_FUNCTION__<<std::endl;
+
 
     bool modesValid = true;
     for(AttributeList::const_iterator itr = _attributeList.begin();

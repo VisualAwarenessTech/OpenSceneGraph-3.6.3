@@ -15,6 +15,7 @@
 #include <osgManipulator/TranslateAxisDragger>
 
 #include <osg/Quat>
+#include <osg/Geode>
 
 using namespace osgManipulator;
 

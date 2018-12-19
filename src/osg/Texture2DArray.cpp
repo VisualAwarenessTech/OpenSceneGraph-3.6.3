@@ -276,7 +276,7 @@ void Texture2DArray::apply(State& state) const
     if (textureObject)
     {
         // bind texture object
-        textureObject->bind(state);
+        textureObject->bind();
 
         // if subload is specified, then use it to subload the images to GPU memory
         if (_subloadCallback.valid())
@@ -323,7 +323,7 @@ void Texture2DArray::apply(State& state) const
     {
         // generate texture (i.e. glGenTexture) and apply parameters
         textureObject = generateAndAssignTextureObject(contextID, GL_TEXTURE_2D_ARRAY);
-        textureObject->bind(state);
+        textureObject->bind();
         applyTexParameters(GL_TEXTURE_2D_ARRAY, state);
         _subloadCallback->load(*this,state);
     }
@@ -348,7 +348,7 @@ void Texture2DArray::apply(State& state) const
                     _textureWidth, _textureHeight, textureDepth,0);
 
         // bind texture
-        textureObject->bind(state);
+        textureObject->bind();
 
         applyTexParameters(GL_TEXTURE_2D_ARRAY, state);
 
@@ -448,7 +448,7 @@ void Texture2DArray::apply(State& state) const
                 texStorageSizedInternalFormat!=0 ? texStorageSizedInternalFormat :_internalFormat,
                 _textureWidth, _textureHeight, _textureDepth, 0);
 
-        textureObject->bind(state);
+        textureObject->bind();
 
         applyTexParameters(GL_TEXTURE_2D_ARRAY,state);
 
@@ -681,7 +681,7 @@ void Texture2DArray::copyTexSubImage2DArray(State& state, int xoffset, int yoffs
     // if texture object is valid
     if (textureObject != 0)
     {
-        textureObject->bind(state);
+        textureObject->bind();
 
         applyTexParameters(GL_TEXTURE_2D_ARRAY,state);
         extensions->glCopyTexSubImage3D( GL_TEXTURE_2D_ARRAY, 0, xoffset,yoffset,zoffset, x, y, width, height);
@@ -720,7 +720,7 @@ void Texture2DArray::allocateMipmap(State& state) const
         }
 
         // bind texture
-        textureObject->bind(state);
+        textureObject->bind();
 
         // compute number of mipmap levels
         int width = _textureWidth;

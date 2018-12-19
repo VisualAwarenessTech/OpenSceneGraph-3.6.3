@@ -1583,6 +1583,7 @@ void CullVisitor::apply(osg::Camera& camera)
             }
         }
 
+
         // set up clear masks/values
         rtts->setClearDepth(camera.getClearDepth());
         rtts->setClearAccum(camera.getClearAccum());

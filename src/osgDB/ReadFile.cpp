@@ -311,34 +311,3 @@ osg::ref_ptr<osg::Shader> osgDB::readRefShaderFileWithFallback(osg::Shader::Type
     if (!shader) shader = new osg::Shader(type, fallback);
     return shader;
 }
-
-
-
-/////////////////////////////////////////////////////////////
-//
-// Helper proxy class for pre-loading shader pipeline shaders
-//
-struct LoadShaderShaderPipelineFilesProxy
-{
-    LoadShaderShaderPipelineFilesProxy()
-    {
-        // pre-load any ShaderPipeline shaders
-        if (osg::DisplaySettings::instance()->getShaderPipeline())
-        {
-            OSG_INFO<<"LoadShaderShaderPipelineFilesProxy() Pre-loading the ShaderPipeline shaders"<<std::endl;
-            for(osg::DisplaySettings::Filenames::const_iterator itr = osg::DisplaySettings::instance()->getShaderPipelineFiles().begin();
-                itr != osg::DisplaySettings::instance()->getShaderPipelineFiles().end();
-                ++itr)
-            {
-                osg::ref_ptr<osg::Shader> shader = osgDB::readRefShaderFile(*itr);
-                if (shader.valid())
-                {
-                    OSG_INFO<<"   read shader "<<*itr<<std::endl;
-                    osg::DisplaySettings::instance()->setObject(*itr, shader.get());
-                }
-            }
-        }
-    }
-};
-
-static LoadShaderShaderPipelineFilesProxy s_LoadShaderShaderPipelineFilesProxy;

@@ -419,7 +419,8 @@ void addBindMatrix(
     const osg::Matrix& bindMatrix,
     osgAnimation::RigGeometry* pRigGeometry)
 {
-    boneBindMatrices[pBone][bindMatrix].insert(pRigGeometry);
+    boneBindMatrices.insert(BindMatrixMap::value_type(
+        BindMatrixMap::key_type(pBone, pRigGeometry), bindMatrix));
 }
 
 void addVec2ArrayElement(osg::Array& a, const FbxVector2& v)

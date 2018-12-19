@@ -452,7 +452,7 @@ void Optimizer::StateVisitor::optimize()
 
         // create map from uniforms to stateset when contain them.
         typedef std::set<osg::StateSet*>                    StateSetSet;
-        typedef std::map<osg::UniformBase*,StateSetSet>     UniformToStateSetMap;
+        typedef std::map<osg::Uniform*,StateSetSet>         UniformToStateSetMap;
 
         const unsigned int NON_TEXTURE_ATTRIBUTE = 0xffffffff;
 
@@ -560,7 +560,7 @@ void Optimizer::StateVisitor::optimize()
         if (uniformToStateSetMap.size()>=2)
         {
             // create unique set of uniform pointers.
-            typedef std::vector<osg::UniformBase*> UniformList;
+            typedef std::vector<osg::Uniform*> UniformList;
             UniformList uniformList;
 
             for(UniformToStateSetMap::iterator aitr=uniformToStateSetMap.begin();
@@ -572,7 +572,7 @@ void Optimizer::StateVisitor::optimize()
 
             // sort the uniforms so that equal uniforms sit along side each
             // other.
-            std::sort(uniformList.begin(),uniformList.end(),LessDerefFunctor<osg::UniformBase>());
+            std::sort(uniformList.begin(),uniformList.end(),LessDerefFunctor<osg::Uniform>());
 
             OSG_INFO << "state uniform list"<< std::endl;
             for(UniformList::iterator uuitr = uniformList.begin();

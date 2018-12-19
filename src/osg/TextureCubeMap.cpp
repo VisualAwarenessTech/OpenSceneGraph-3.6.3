@@ -231,7 +231,7 @@ void TextureCubeMap::apply(State& state) const
 
     if (textureObject)
     {
-        textureObject->bind(state);
+        textureObject->bind();
 
         if (_subloadCallback.valid())
         {
@@ -265,7 +265,7 @@ void TextureCubeMap::apply(State& state) const
     {
         textureObject = generateAndAssignTextureObject(contextID,GL_TEXTURE_CUBE_MAP);
 
-        textureObject->bind(state);
+        textureObject->bind();
 
         applyTexParameters(GL_TEXTURE_CUBE_MAP,state);
 
@@ -300,7 +300,7 @@ void TextureCubeMap::apply(State& state) const
                 texStorageSizedInternalFormat!=0 ? texStorageSizedInternalFormat : _internalFormat,
                 _textureWidth, _textureHeight, 1, 0);
 
-        textureObject->bind(state);
+        textureObject->bind();
 
         applyTexParameters(GL_TEXTURE_CUBE_MAP,state);
 
@@ -347,7 +347,7 @@ void TextureCubeMap::apply(State& state) const
                 texStorageSizedInternalFormat!=0 ? texStorageSizedInternalFormat : _internalFormat,
                 _textureWidth, _textureHeight, 1, 0);
 
-        textureObject->bind(state);
+        textureObject->bind();
 
         applyTexParameters(GL_TEXTURE_CUBE_MAP,state);
 
@@ -418,7 +418,7 @@ void TextureCubeMap::copyTexSubImageCubeMap(State& state, int face, int xoffset,
     if (textureObject)
     {
         // we have a valid image
-        textureObject->bind(state);
+        textureObject->bind();
 
         applyTexParameters(GL_TEXTURE_CUBE_MAP, state);
 
@@ -458,7 +458,7 @@ void TextureCubeMap::allocateMipmap(State& state) const
     if (textureObject && _textureWidth != 0 && _textureHeight != 0)
     {
         // bind texture
-        textureObject->bind(state);
+        textureObject->bind();
 
         // compute number of mipmap levels
         int width = _textureWidth;

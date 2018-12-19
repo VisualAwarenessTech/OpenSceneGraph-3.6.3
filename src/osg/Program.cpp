@@ -233,14 +233,18 @@ void Program::dirtyProgram()
         if( _pcpList[cxt].valid() ) _pcpList[cxt]->requestLink();
     }
 
-    // update list of pragma defines required.
-    _shaderPragmas.clear();
+    // update list of defines required.
+    _shaderDefines.clear();
     for(ShaderList::iterator itr = _shaderList.begin();
         itr != _shaderList.end();
         ++itr)
     {
         Shader* shader = itr->get();
-        _shaderPragmas.merge(shader->getShaderPragmas());
+        ShaderDefines& sd = shader->getShaderDefines();
+        _shaderDefines.insert(sd.begin(), sd.end());
+
+        ShaderDefines& sr = shader->getShaderRequirements();
+        _shaderDefines.insert(sr.begin(), sr.end());
     }
 }
 
@@ -577,8 +581,7 @@ bool Program::ProgramObjects::getGlProgramInfoLog(std::string& log) const
 Program::PerContextProgram* Program::getPCP(State& state) const
 {
     unsigned int contextID = state.getContextID();
-    std::string defineStr;
-    state.getDefineString(defineStr, getShaderPragmas());
+    const std::string defineStr = state.getDefineString(getShaderDefines());
 
     if( ! _pcpList[contextID].valid() )
     {

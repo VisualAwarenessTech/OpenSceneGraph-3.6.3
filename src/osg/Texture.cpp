@@ -246,12 +246,10 @@ Texture::TextureObject::~TextureObject()
     // OSG_NOTICE<<"Texture::TextureObject::~TextureObject() "<<this<<std::endl;
 }
 
-void Texture::TextureObject::bind(osg::State& state)
+void Texture::TextureObject::bind()
 {
     glBindTexture( _profile._target, _id);
     if (_set) _set->moveToBack(this);
-
-    if (state.getUseStateAttributeShaders()) state.setCurrentTextureFormat(_profile._internalFormat);
 }
 
 void Texture::TextureObject::release()
@@ -1225,15 +1223,9 @@ osg::ref_ptr<Texture::TextureObject> Texture::generateTextureObject(const Textur
 // Texture class implementation
 //
 Texture::Texture():
-#if 0
             _wrap_s(CLAMP),
             _wrap_t(CLAMP),
             _wrap_r(CLAMP),
-#else
-            _wrap_s(CLAMP_TO_EDGE),
-            _wrap_t(CLAMP_TO_EDGE),
-            _wrap_r(CLAMP_TO_EDGE),
-#endif
             _min_filter(LINEAR_MIPMAP_LINEAR), // trilinear
             _mag_filter(LINEAR),
             _maxAnisotropy(1.0f),
@@ -1260,7 +1252,7 @@ Texture::Texture():
 }
 
 Texture::Texture(const Texture& text,const CopyOp& copyop):
-            TextureAttribute(text,copyop),
+            StateAttribute(text,copyop),
             _wrap_s(text._wrap_s),
             _wrap_t(text._wrap_t),
             _wrap_r(text._wrap_r),
@@ -2318,19 +2310,21 @@ void Texture::applyTexImage2D_load(State& state, GLenum target, const Image* ima
             int width  = inwidth;
             int height = inheight;
 
-            GLenum texStorageSizedInternalFormat = extensions->isTexStorage2DSupported() && (_borderWidth==0) ? selectSizedInternalFormat(image) : 0;
-            if (texStorageSizedInternalFormat!=0)
+            GLenum texStoragesizedInternalFormat = extensions->isTextureStorageEnabled && extensions->isTexStorage2DSupported() && (_borderWidth==0) ? selectSizedInternalFormat(image) : 0;
+
+            if (texStoragesizedInternalFormat!=0)
             {
                 if (getTextureTarget()==GL_TEXTURE_CUBE_MAP)
                 {
                     if (target==GL_TEXTURE_CUBE_MAP_POSITIVE_X)
                     {
-                        extensions->glTexStorage2D(GL_TEXTURE_CUBE_MAP, numMipmapLevels, texStorageSizedInternalFormat, width, height);
+                        // only allocate on first face image
+                        extensions->glTexStorage2D(GL_TEXTURE_CUBE_MAP, numMipmapLevels, texStoragesizedInternalFormat, width, height);
                     }
                 }
                 else
                 {
-                    extensions->glTexStorage2D(target, numMipmapLevels, texStorageSizedInternalFormat, width, height);
+                    extensions->glTexStorage2D(target, numMipmapLevels, texStoragesizedInternalFormat, width, height);
                 }
 
                 if( !compressed_image )
@@ -2758,7 +2752,7 @@ Texture::GenerateMipmapMode Texture::mipmapBeforeTexImage(const State& state, bo
             if (useGenerateMipMap) return GENERATE_MIPMAP;
         }
 
-        glTexParameteri(getTextureTarget(), GL_GENERATE_MIPMAP_SGIS, GL_TRUE);
+        glTexParameteri(GL_TEXTURE_2D, GL_GENERATE_MIPMAP_SGIS, GL_TRUE);
         return GENERATE_MIPMAP_TEX_PARAMETER;
 #endif
     }
@@ -2781,7 +2775,7 @@ void Texture::mipmapAfterTexImage(State& state, GenerateMipmapMode beforeResult)
             break;
         }
         case GENERATE_MIPMAP_TEX_PARAMETER:
-            glTexParameteri(getTextureTarget(), GL_GENERATE_MIPMAP_SGIS, GL_FALSE);
+            glTexParameteri(GL_TEXTURE_2D, GL_GENERATE_MIPMAP_SGIS, GL_FALSE);
             break;
         case GENERATE_MIPMAP_NONE:
             break;
@@ -2813,7 +2807,7 @@ void Texture::generateMipmap(State& state) const
     // FrameBufferObjects are required for glGenerateMipmap
     if (ext->isFrameBufferObjectSupported && ext->glGenerateMipmap)
     {
-        textureObject->bind(state);
+        textureObject->bind();
         ext->glGenerateMipmap(textureObject->target());
 
         // inform state that this texture is the current one bound.

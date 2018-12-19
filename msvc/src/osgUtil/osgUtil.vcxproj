@@ -763,6 +763,7 @@
     <ClCompile Include="..\..\..\src\osgUtil\HighlightMapGenerator.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\IntersectionVisitor.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\IncrementalCompileOperation.cpp" />
+    <ClCompile Include="..\..\..\src\osgUtil\IntersectVisitor.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\LineSegmentIntersector.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\MeshOptimizers.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\Optimizer.cpp" />
@@ -787,6 +788,10 @@
     <ClCompile Include="..\..\..\src\osgUtil\Tessellator.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\TransformAttributeFunctor.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\TransformCallback.cpp" />
+    <ClCompile Include="..\..\..\src\osgUtil\tristripper\src\connectivity_graph.cpp" />
+    <ClCompile Include="..\..\..\src\osgUtil\tristripper\src\policy.cpp" />
+    <ClCompile Include="..\..\..\src\osgUtil\tristripper\src\tri_stripper.cpp" />
+    <ClCompile Include="..\..\..\src\osgUtil\TriStripVisitor.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\UpdateVisitor.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\Version.cpp" />
     <ResourceCompile Include="..\..\PlatformSpecifics\Windows\OpenSceneGraphVersionInfo.rc" />
@@ -803,6 +808,7 @@
     <None Include="..\..\..\include\osgUtil\HighlightMapGenerator" />
     <None Include="..\..\..\include\osgUtil\IntersectionVisitor" />
     <None Include="..\..\..\include\osgUtil\IncrementalCompileOperation" />
+    <None Include="..\..\..\include\osgUtil\IntersectVisitor" />
     <None Include="..\..\..\include\osgUtil\LineSegmentIntersector" />
     <None Include="..\..\..\include\osgUtil\MeshOptimizers" />
     <None Include="..\..\..\include\osgUtil\OperationArrayFunctor" />
@@ -829,6 +835,7 @@
     <None Include="..\..\..\include\osgUtil\Tessellator" />
     <None Include="..\..\..\include\osgUtil\TransformAttributeFunctor" />
     <None Include="..\..\..\include\osgUtil\TransformCallback" />
+    <None Include="..\..\..\include\osgUtil\TriStripVisitor" />
     <None Include="..\..\..\include\osgUtil\UpdateVisitor" />
     <None Include="..\..\..\include\osgUtil\Version" />
   </ItemGroup>
@@ -839,6 +846,16 @@
     <ProjectReference Include="..\osg\osg.vcxproj">
       <Project>E97A06EA-2E0B-4EC2-BD5E-3565D39D235C</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\cache_simulator.h" />
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\connectivity_graph.h" />
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\graph_array.h" />
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\heap_array.h" />
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\policy.h" />
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\types.h" />
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\public_types.h" />
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\tri_stripper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

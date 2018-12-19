@@ -239,7 +239,7 @@ void Texture3D::apply(State& state) const
     if (textureObject)
     {
         // we have a valid image
-        textureObject->bind(state);
+        textureObject->bind();
 
         if (_subloadCallback.valid())
         {
@@ -268,7 +268,7 @@ void Texture3D::apply(State& state) const
 
         textureObject = generateAndAssignTextureObject(contextID,GL_TEXTURE_3D);
 
-        textureObject->bind(state);
+        textureObject->bind();
 
         applyTexParameters(GL_TEXTURE_3D,state);
 
@@ -294,7 +294,7 @@ void Texture3D::apply(State& state) const
 
         textureObject = generateAndAssignTextureObject(contextID,GL_TEXTURE_3D);
 
-        textureObject->bind(state);
+        textureObject->bind();
 
         // update the modified count to show that it is up to date.
         getModifiedCount(contextID) = _image->getModifiedCount();
@@ -320,7 +320,7 @@ void Texture3D::apply(State& state) const
         if (texStorageSizedInternalFormat!=0)
         {
             textureObject = generateAndAssignTextureObject(contextID, GL_TEXTURE_3D, _numMipmapLevels, texStorageSizedInternalFormat, _textureWidth, _textureHeight, _textureDepth,0);
-            textureObject->bind(state);
+            textureObject->bind();
             applyTexParameters(GL_TEXTURE_3D, state);
 
             extensions->glTexStorage3D( GL_TEXTURE_3D, osg::maximum(_numMipmapLevels,1), texStorageSizedInternalFormat, _textureWidth, _textureHeight, _textureDepth);
@@ -329,7 +329,7 @@ void Texture3D::apply(State& state) const
         {
             GLenum internalFormat = _sourceFormat ? _sourceFormat : _internalFormat;
             textureObject = generateAndAssignTextureObject(contextID, GL_TEXTURE_3D, _numMipmapLevels, internalFormat, _textureWidth, _textureHeight, _textureDepth,0);
-            textureObject->bind(state);
+            textureObject->bind();
             applyTexParameters(GL_TEXTURE_3D, state);
 
             extensions->glTexImage3D( GL_TEXTURE_3D, 0, _internalFormat,
@@ -501,7 +501,7 @@ void Texture3D::copyTexSubImage3D(State& state, int xoffset, int yoffset, int zo
 
     if (textureObject != 0)
     {
-        textureObject->bind(state);
+        textureObject->bind();
 
         applyTexParameters(GL_TEXTURE_3D,state);
         extensions->glCopyTexSubImage3D( GL_TEXTURE_3D, 0, xoffset,yoffset,zoffset, x, y, width, height);
@@ -531,7 +531,7 @@ void Texture3D::allocateMipmap(State& state) const
         const GLExtensions* extensions = state.get<GLExtensions>();
 
         // bind texture
-        textureObject->bind(state);
+        textureObject->bind();
 
         // compute number of mipmap levels
         int width = _textureWidth;

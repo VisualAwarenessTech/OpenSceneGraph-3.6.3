@@ -16,12 +16,11 @@
 *  THE SOFTWARE.
 */
 
-#include <osg/CoordinateSystemNode>
-#include <osg/Material>
 #include <osgDB/ReadFile>
 #include <osgUtil/Optimizer>
 #include <osgViewer/Viewer>
 #include <osgViewer/ViewerEventHandlers>
+#include <osg/CoordinateSystemNode>
 #include <osgText/Text>
 
 #include <osgManipulator/TabBoxDragger>
@@ -38,6 +37,10 @@
 #include <osgManipulator/RotateCylinderDragger>
 #include <osgManipulator/AntiSquish>
 
+#include <osg/ShapeDrawable>
+#include <osg/MatrixTransform>
+#include <osg/Geometry>
+#include <osg/Material>
 #include <osg/io_utils>
 
 #include <iostream>

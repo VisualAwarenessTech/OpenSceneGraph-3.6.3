@@ -2277,7 +2277,7 @@ public:
 
 };
 
-REGISTER_WINDOWINGSYSTEMINTERFACE2(X11, X11WindowingSystemInterface, OSGVIEWER_EXPORT)
+REGISTER_WINDOWINGSYSTEMINTERFACE(X11, X11WindowingSystemInterface)
 
 void GraphicsWindowX11::raiseWindow()
 {

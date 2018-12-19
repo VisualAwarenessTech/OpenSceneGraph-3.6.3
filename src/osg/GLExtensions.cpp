@@ -63,6 +63,10 @@ static osg::buffered_object<ExtensionSet> s_glExtensionSetList;
 static osg::buffered_object<std::string> s_glRendererList;
 static osg::buffered_value<int> s_glInitializedList;
 
+static osg::buffered_object<ExtensionSet> s_gluExtensionSetList;
+static osg::buffered_object<std::string> s_gluRendererList;
+static osg::buffered_value<int> s_gluInitializedList;
+
 static ApplicationUsageProxy GLEXtension_e0(ApplicationUsage::ENVIRONMENTAL_VARIABLE, "OSG_GL_EXTENSION_DISABLE <value>", "Use space deliminarted list of GL extensions to disable associated GL extensions");
 static ApplicationUsageProxy GLEXtension_e1(ApplicationUsage::ENVIRONMENTAL_VARIABLE, "OSG_MAX_TEXTURE_SIZE <value>", "Clamp the maximum GL texture size to specified value.");
 
@@ -335,8 +339,6 @@ OSG_INIT_SINGLETON_PROXY(GLExtensionDisableStringInitializationProxy, osg::getGL
             static void *handle = dlopen("libGLESv1_CM.so", RTLD_NOW);
         #elif defined(OSG_GLES2_AVAILABLE)
             static void *handle = dlopen("libGLESv2.so", RTLD_NOW);
-        #elif defined(OSG_GLES3_AVAILABLE)
-            static void *handle = dlopen("libGLESv3.so", RTLD_NOW);
         #elif defined(OSG_GL1_AVAILABLE)
             static void *handle = dlopen("libGL.so", RTLD_NOW);
         #endif
@@ -965,12 +967,21 @@ GLExtensions::GLExtensions(unsigned int in_contextID):
     maxLayerCount = 0;
     if (validContext) glGetIntegerv(GL_MAX_ARRAY_TEXTURE_LAYERS, &maxLayerCount);
 
-    // Bindless textures
+    // ARB_bindless_texture
     setGLExtensionFuncPtr(glGetTextureHandle,             "glGetTextureHandle", "glGetTextureHandleARB","glGetTextureHandleNV", validContext);
+    setGLExtensionFuncPtr(glGetTextureSamplerHandle,      "glGetTextureSamplerHandle","glGetTextureSamplerHandleARB", "glGetTextureSamplerHandleNV", validContext);
     setGLExtensionFuncPtr(glMakeTextureHandleResident,    "glMakeTextureHandleResident", "glMakeTextureHandleResidentARB","glMakeTextureHandleResidentNV", validContext);
     setGLExtensionFuncPtr(glMakeTextureHandleNonResident, "glMakeTextureHandleNonResident", "glMakeTextureHandleNonResidentARB", "glMakeTextureHandleNonResidentNV",validContext);
-    setGLExtensionFuncPtr(glUniformHandleui64,            "glUniformHandleui64", "glUniformHandleui64ARB","glUniformHandleui64NV", validContext);
     setGLExtensionFuncPtr(glIsTextureHandleResident,      "glIsTextureHandleResident","glIsTextureHandleResidentARB", "glIsTextureHandleResidentNV", validContext);
+    setGLExtensionFuncPtr(glGetImageHandle,      "glGetImageHandle","glGetImageHandleARB", "glGetImageHandleNV", validContext);
+    setGLExtensionFuncPtr(glMakeImageHandleResident,      "glMakeImageHandleResident","glMakeImageHandleResidentARB", "glMakeImageHandleResidentNV", validContext);
+    setGLExtensionFuncPtr(glMakeImageHandleNonResident,      "glMakeImageHandleNonResident","glMakeImageHandleNonResidentARB", "glMakeImageHandleNonResidentNV", validContext);
+    setGLExtensionFuncPtr(glIsImageHandleResident,      "glIsImageHandleResident","glIsImageHandleResidentARB", "glIsImageHandleResidentNV", validContext);
+    setGLExtensionFuncPtr(glUniformHandleui64,            "glUniformHandleui64", "glUniformHandleui64ARB","glUniformHandleui64NV", validContext);
+    setGLExtensionFuncPtr(glUniformHandleuiv64,      "glUniformHandleuiv64","glUniformHandleuiv64ARB", "glUniformHandleuiv64NV", validContext);
+    setGLExtensionFuncPtr(glProgramUniformHandleui64,      "glProgramUniformHandleui64","glProgramUniformHandleui64ARB", "glProgramUniformHandleui64NV", validContext);
+    setGLExtensionFuncPtr(glProgramUniformHandleuiv64,      "glProgramUniformHandleuiv64","glProgramUniformHandleuiv64ARB", "glProgramUniformHandleuiv64NV", validContext);
+
 
     // Blending
     isBlendColorSupported = validContext &&
@@ -1048,9 +1059,7 @@ GLExtensions::GLExtensions(unsigned int in_contextID):
 
 
     isPointSpriteSupported = validContext && (OSG_GLES2_FEATURES || OSG_GLES3_FEATURES || OSG_GL3_FEATURES || isGLExtensionSupported(contextID, "GL_ARB_point_sprite") || isGLExtensionSupported(contextID, "GL_OES_point_sprite") || isGLExtensionSupported(contextID, "GL_NV_point_sprite"));
-
-    isPointSpriteModeSupported = isPointSpriteModeSupported && !OSG_GL3_FEATURES;
-
+    isPointSpriteModeSupported = isPointSpriteSupported && !OSG_GL3_FEATURES;
     isPointSpriteCoordOriginSupported = validContext && (OSG_GL3_FEATURES || (glVersion >= 2.0f));
 
 
@@ -1275,13 +1284,6 @@ GLExtensions::GLExtensions(unsigned int in_contextID):
 
 }
 
-GLExtensions::~GLExtensions()
-{
-    // Remove s_gl*List
-    s_glExtensionSetList[contextID] = ExtensionSet();
-    s_glRendererList[contextID] = std::string();
-    s_glInitializedList[contextID] = 0;
-}
 
 ///////////////////////////////////////////////////////////////////////////
 // C++-friendly convenience methods
@@ -1386,3 +1388,4 @@ bool GLExtensions::getFragDataLocation( const char* fragDataName, GLuint& locati
     location = loc;
     return true;
 }
+

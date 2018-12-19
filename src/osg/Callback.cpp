@@ -15,7 +15,6 @@
 #include <osg/ScriptEngine>
 #include <osg/RenderInfo>
 #include <osg/Drawable>
-#include <osg/Uniform>
 
 using namespace osg;
 
@@ -162,14 +161,4 @@ bool DrawableEventCallback::run(osg::Object* object, osg::Object* data)
 bool DrawableCullCallback::cull(osg::NodeVisitor* nv, osg::Drawable* drawable, osg::RenderInfo* renderInfo) const
 {
     return cull(nv, drawable, renderInfo? renderInfo->getState():0);
-}
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//
-//
-void UniformCallback::operator () (UniformBase* ub, NodeVisitor* nv)
-{
-    Uniform* uniform = ub->asUniform();
-    if (uniform) this->operator()(uniform, nv);
 }

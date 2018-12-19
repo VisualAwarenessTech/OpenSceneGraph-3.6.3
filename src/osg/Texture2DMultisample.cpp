@@ -98,7 +98,7 @@ void Texture2DMultisample::apply(State& state) const
 
     if (textureObject)
     {
-        textureObject->bind(state);
+        textureObject->bind();
     }
     else if ( (_textureWidth!=0) && (_textureHeight!=0) && (_numSamples!=0) )
     {
@@ -107,14 +107,14 @@ void Texture2DMultisample::apply(State& state) const
         if (texStorageSizedInternalFormat!=0)
         {
             textureObject = generateAndAssignTextureObject(contextID, getTextureTarget(), 1, texStorageSizedInternalFormat, _textureWidth, _textureHeight, 1, 0);
-            textureObject->bind(state);
+            textureObject->bind();
 
             extensions->glTexStorage2DMultisample( GL_TEXTURE_2D_MULTISAMPLE, _numSamples, texStorageSizedInternalFormat, _textureWidth, _textureHeight, _fixedsamplelocations);
         }
         else
         {
             textureObject = generateAndAssignTextureObject(contextID, getTextureTarget(), 1, _internalFormat, _textureWidth, _textureHeight, 1, _borderWidth);
-            textureObject->bind(state);
+            textureObject->bind();
 
             extensions->glTexImage2DMultisample( GL_TEXTURE_2D_MULTISAMPLE,
                                              _numSamples,

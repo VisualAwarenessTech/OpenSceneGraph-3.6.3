@@ -153,8 +153,11 @@ int main( int argc, char **argv )
 
     osg::ref_ptr<osg::StateSet> stateSet = scenegraph->getOrCreateStateSet();
 
-    osg::MatrixfArrayUniform* LRuniform = stateSet->getOrCreateUniform<osg::MatrixfArrayUniform>("transform_block");
-    LRuniform->resize(2);
+    osg::Uniform* LRuniform = stateSet->getUniform("transform_block");
+    if (!LRuniform) {
+        LRuniform = new osg::Uniform(osg::Uniform::FLOAT_MAT4, "transform_block", 2);
+        stateSet->addUniform(LRuniform);
+    }
 
     viewer.setSceneData(scenegraph.get());
     viewer.realize();

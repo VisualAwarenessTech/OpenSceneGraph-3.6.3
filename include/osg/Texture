@@ -16,7 +16,7 @@
 
 #include <osg/GL>
 #include <osg/Image>
-#include <osg/TextureAttribute>
+#include <osg/StateAttribute>
 #include <osg/GraphicsContext>
 #include <osg/ref_ptr>
 #include <osg/Vec4>
@@ -418,7 +418,7 @@ class TextureObjectManager;
 /** Texture pure virtual base class that encapsulates OpenGL texture
   * functionality common to the various types of OSG textures.
 */
-class OSG_EXPORT Texture : public osg::TextureAttribute
+class OSG_EXPORT Texture : public osg::StateAttribute
 {
 
     public :
@@ -1047,7 +1047,7 @@ class OSG_EXPORT Texture : public osg::TextureAttribute
             }
 
 
-            void bind(osg::State& state);
+            void bind();
 
             inline GLenum id() const { return _id; }
             inline GLenum target() const { return _profile._target; }

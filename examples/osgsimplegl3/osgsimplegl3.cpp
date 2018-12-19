@@ -4,7 +4,7 @@
 // to use and distribute this software for any purpose.
 
 
-// Example: OSG using an OpenGL 3.0 context.
+// Example: OSG using an OpenGL 3.1 context.
 // The comment block at the end of the source describes building OSG
 // for use with OpenGL 3.x.
 
@@ -21,7 +21,7 @@
 void configureShaders( osg::StateSet* stateSet )
 {
     const std::string vertexSource =
-        "#version 130 \n"
+        "#version 140 \n"
         " \n"
         "uniform mat4 osg_ModelViewProjectionMatrix; \n"
         "uniform mat3 osg_NormalMatrix; \n"
@@ -42,7 +42,7 @@ void configureShaders( osg::StateSet* stateSet )
     osg::Shader* vShader = new osg::Shader( osg::Shader::VERTEX, vertexSource );
 
     const std::string fragmentSource =
-        "#version 130 \n"
+        "#version 140 \n"
         " \n"
         "in vec4 color; \n"
         "out vec4 fragData; \n"
@@ -80,7 +80,7 @@ int main( int argc, char** argv )
     configureShaders( root->getOrCreateStateSet() );
 
     const int width( 800 ), height( 450 );
-    const std::string version( "3.0" );
+    const std::string version( "3.1" );
     osg::ref_ptr< osg::GraphicsContext::Traits > traits = new osg::GraphicsContext::Traits();
     traits->x = 20; traits->y = 30;
     traits->width = width; traits->height = height;

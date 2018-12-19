@@ -112,6 +112,21 @@
     <ClCompile Include="..\..\..\src\osgUtil\Version.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\src\osgUtil\IntersectVisitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgUtil\TriStripVisitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgUtil\tristripper\src\connectivity_graph.cpp">
+      <Filter>Source Files\tristripper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgUtil\tristripper\src\policy.cpp">
+      <Filter>Source Files\tristripper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\osgUtil\tristripper\src\tri_stripper.cpp">
+      <Filter>Source Files\tristripper</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\include\osgUtil\ConvertVec">
@@ -237,6 +252,12 @@
     <None Include="..\..\..\include\osgUtil\Version">
       <Filter>Header Files</Filter>
     </None>
+    <None Include="..\..\..\include\osgUtil\IntersectVisitor">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\..\..\include\osgUtil\TriStripVisitor">
+      <Filter>Header Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\..\PlatformSpecifics\Windows\OpenSceneGraphVersionInfo.rc">
@@ -250,5 +271,40 @@
     <Filter Include="Header Files">
       <UniqueIdentifier>{5F56EF0D-C8B5-47F3-B68E-7E4FB2BE8823}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\tristripper">
+      <UniqueIdentifier>{8085245e-dac7-41bb-8543-70c5bfd5f70a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tristripper">
+      <UniqueIdentifier>{1b2316d6-bed4-47b1-88c7-0bdb474e0cca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tristripper\detail">
+      <UniqueIdentifier>{abc5208b-50bc-47c0-b61e-749ee4903925}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\public_types.h">
+      <Filter>Header Files\tristripper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\tri_stripper.h">
+      <Filter>Header Files\tristripper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\cache_simulator.h">
+      <Filter>Header Files\tristripper\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\connectivity_graph.h">
+      <Filter>Header Files\tristripper\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\graph_array.h">
+      <Filter>Header Files\tristripper\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\heap_array.h">
+      <Filter>Header Files\tristripper\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\policy.h">
+      <Filter>Header Files\tristripper\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\types.h">
+      <Filter>Header Files\tristripper\detail</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
