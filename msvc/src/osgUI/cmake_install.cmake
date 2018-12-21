@@ -1,4 +1,4 @@
-# Install script for directory: K:/Development/op3d_active/OpenSceneGraph-3.6.3/src/osgUI
+# Install script for directory: D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/src/osgUI
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,58 +29,58 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph-dev")
   IF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/lib/osgUId.lib")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/lib/osgUId.lib")
   ELSEIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/lib/osgUI.lib")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/lib/osgUI.lib")
   ELSEIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/lib/osgUIs.lib")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/lib/osgUIs.lib")
   ELSEIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/lib/osgUIrd.lib")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/lib/osgUIrd.lib")
   ENDIF()
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph-dev")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph")
   IF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/bin/osg160-osgUId.dll")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/bin/osg158-osgUId.dll")
   ELSEIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/bin/osg160-osgUI.dll")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/bin/osg158-osgUI.dll")
   ELSEIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/bin/osg160-osgUIs.dll")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/bin/osg158-osgUIs.dll")
   ELSEIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/bin/osg160-osgUIrd.dll")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/bin/osg158-osgUIrd.dll")
   ENDIF()
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph")
   IF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/bin/osg160-osgUIrd.pdb")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/bin/osg158-osgUIrd.pdb")
   ENDIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph")
   IF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/bin/osg160-osgUId.pdb")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/bin/osg158-osgUId.pdb")
   ENDIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph-dev")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/osgUI" TYPE FILE FILES
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgUI/Export"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgUI/ColorPalette"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgUI/Widget"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgUI/Label"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgUI/LineEdit"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgUI/Dialog"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgUI/Popup"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgUI/PushButton"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgUI/ComboBox"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgUI/Callbacks"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgUI/Style"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgUI/AlignmentSettings"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgUI/FrameSettings"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgUI/TabWidget"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgUI/TextSettings"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgUI/Validator"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgUI/Export"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgUI/ColorPalette"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgUI/Widget"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgUI/Label"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgUI/LineEdit"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgUI/Dialog"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgUI/Popup"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgUI/PushButton"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgUI/ComboBox"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgUI/Callbacks"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgUI/Style"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgUI/AlignmentSettings"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgUI/FrameSettings"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgUI/TabWidget"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgUI/TextSettings"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgUI/Validator"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph-dev")
 

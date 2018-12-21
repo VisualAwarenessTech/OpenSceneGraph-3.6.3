@@ -1,4 +1,4 @@
-# Install script for directory: K:/Development/op3d_active/OpenSceneGraph-3.6.3/src/osgWrappers/deprecated-dotosg
+# Install script for directory: D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/src/osgWrappers/deprecated-dotosg
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,17 +29,17 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/deprecated-dotosg/osg/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/deprecated-dotosg/osgParticle/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/deprecated-dotosg/osgAnimation/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/deprecated-dotosg/osgFX/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/deprecated-dotosg/osgSim/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/deprecated-dotosg/osgText/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/deprecated-dotosg/osgViewer/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/deprecated-dotosg/osgShadow/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/deprecated-dotosg/osgTerrain/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/deprecated-dotosg/osgVolume/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/deprecated-dotosg/osgWidget/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/deprecated-dotosg/osg/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/deprecated-dotosg/osgParticle/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/deprecated-dotosg/osgAnimation/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/deprecated-dotosg/osgFX/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/deprecated-dotosg/osgSim/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/deprecated-dotosg/osgText/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/deprecated-dotosg/osgViewer/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/deprecated-dotosg/osgShadow/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/deprecated-dotosg/osgTerrain/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/deprecated-dotosg/osgVolume/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/deprecated-dotosg/osgWidget/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

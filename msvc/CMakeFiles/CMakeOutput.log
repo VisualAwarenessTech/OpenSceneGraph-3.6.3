@@ -10,12 +10,12 @@ Microsoft (R) Build Engine version 12.0.40629.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 11/3/2018 4:19:43 PM.
+Build started 12/19/2018 3:51:25 PM.
 The target "_ConvertPdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)" does not exist in the project, and will be ignored.
 The target "_CollectPdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)" does not exist in the project, and will be ignored.
 The target "_CollectMdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)" does not exist in the project, and will be ignored.
 The target "_CopyMdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)" does not exist in the project, and will be ignored.
-Project "K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\2.8.12.2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+Project "D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\2.8.12.2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
   Creating directory "Debug\CompilerIdC.tlog\".
@@ -26,7 +26,7 @@ ClCompile:
   CMakeCCompilerId.c
 Link:
   C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
-  CompilerIdC.vcxproj -> K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\2.8.12.2\CompilerIdC\.\CompilerIdC.exe
+  CompilerIdC.vcxproj -> D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\2.8.12.2\CompilerIdC\.\CompilerIdC.exe
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
   :VCEnd
@@ -34,20 +34,20 @@ PostBuildEvent:
 FinalizeBuildStatus:
   Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
   Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
-Done Building Project "K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\2.8.12.2\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\2.8.12.2\CompilerIdC\CompilerIdC.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:02.59
+Time Elapsed 00:00:01.84
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
 
-The C compiler identification is MSVC, found in "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/CMakeFiles/2.8.12.2/CompilerIdC/CompilerIdC.exe"
+The C compiler identification is MSVC, found in "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/CMakeFiles/2.8.12.2/CompilerIdC/CompilerIdC.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler:  
@@ -60,12 +60,12 @@ Microsoft (R) Build Engine version 12.0.40629.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 11/3/2018 4:19:46 PM.
+Build started 12/19/2018 3:51:27 PM.
 The target "_ConvertPdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)" does not exist in the project, and will be ignored.
 The target "_CollectPdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)" does not exist in the project, and will be ignored.
 The target "_CollectMdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)" does not exist in the project, and will be ignored.
 The target "_CopyMdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)" does not exist in the project, and will be ignored.
-Project "K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\2.8.12.2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+Project "D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\2.8.12.2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
   Creating directory "Debug\CompilerIdCXX.tlog\".
@@ -76,7 +76,7 @@ ClCompile:
   CMakeCXXCompilerId.cpp
 Link:
   C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
-  CompilerIdCXX.vcxproj -> K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\2.8.12.2\CompilerIdCXX\.\CompilerIdCXX.exe
+  CompilerIdCXX.vcxproj -> D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\2.8.12.2\CompilerIdCXX\.\CompilerIdCXX.exe
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
   :VCEnd
@@ -84,234 +84,234 @@ PostBuildEvent:
 FinalizeBuildStatus:
   Deleting file "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
   Touching "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
-Done Building Project "K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\2.8.12.2\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\2.8.12.2\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.14
+Time Elapsed 00:00:01.34
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
 
-The CXX compiler identification is MSVC, found in "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/CMakeFiles/2.8.12.2/CompilerIdCXX/CompilerIdCXX.exe"
+The CXX compiler identification is MSVC, found in "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/CMakeFiles/2.8.12.2/CompilerIdCXX/CompilerIdCXX.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp
+Change Dir: D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp
 
-Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec2501380866.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec867894670.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
 Microsoft (R) Build Engine version 12.0.40629.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 11/3/2018 4:19:48 PM.
+Build started 12/19/2018 3:51:29 PM.
 The target "_ConvertPdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)" does not exist in the project, and will be ignored.
 The target "_CollectPdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)" does not exist in the project, and will be ignored.
 The target "_CollectMdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)" does not exist in the project, and will be ignored.
 The target "_CopyMdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)" does not exist in the project, and will be ignored.
-Project "K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec2501380866.vcxproj" on node 1 (default targets).
+Project "D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec867894670.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTryCompileExec2501380866.dir\Debug\".
-  Creating directory "K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTryCompileExec2501380866.dir\Debug\cmTryCom.ECE613EE.tlog\".
+  Creating directory "cmTryCompileExec867894670.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec867894670.dir\Debug\cmTryCom.5CBA30DB.tlog\".
 InitializeBuildStatus:
-  Creating "cmTryCompileExec2501380866.dir\Debug\cmTryCom.ECE613EE.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTryCompileExec867894670.dir\Debug\cmTryCom.5CBA30DB.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec2501380866.dir\Debug\\" /Fd"cmTryCompileExec2501380866.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue testCCompiler.c
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec867894670.dir\Debug\\" /Fd"cmTryCompileExec867894670.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue testCCompiler.c
   Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec2501380866.dir\Debug\\" /Fd"cmTryCompileExec2501380866.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue testCCompiler.c
+  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec867894670.dir\Debug\\" /Fd"cmTryCompileExec867894670.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue testCCompiler.c
   
   testCCompiler.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2501380866.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2501380866.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2501380866.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec2501380866.dir\Debug\testCCompiler.obj
-  cmTryCompileExec2501380866.vcxproj -> K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2501380866.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec867894670.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec867894670.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec867894670.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec867894670.dir\Debug\testCCompiler.obj
+  cmTryCompileExec867894670.vcxproj -> D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec867894670.exe
 FinalizeBuildStatus:
-  Deleting file "cmTryCompileExec2501380866.dir\Debug\cmTryCom.ECE613EE.tlog\unsuccessfulbuild".
-  Touching "cmTryCompileExec2501380866.dir\Debug\cmTryCom.ECE613EE.tlog\cmTryCompileExec2501380866.lastbuildstate".
-Done Building Project "K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec2501380866.vcxproj" (default targets).
+  Deleting file "cmTryCompileExec867894670.dir\Debug\cmTryCom.5CBA30DB.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec867894670.dir\Debug\cmTryCom.5CBA30DB.tlog\cmTryCompileExec867894670.lastbuildstate".
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec867894670.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.41
+Time Elapsed 00:00:01.70
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp
+Change Dir: D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp
 
-Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec2979427279.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec3436325458.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
 Microsoft (R) Build Engine version 12.0.40629.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 11/3/2018 4:19:49 PM.
+Build started 12/19/2018 3:51:32 PM.
 The target "_ConvertPdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)" does not exist in the project, and will be ignored.
 The target "_CollectPdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)" does not exist in the project, and will be ignored.
 The target "_CollectMdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)" does not exist in the project, and will be ignored.
 The target "_CopyMdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)" does not exist in the project, and will be ignored.
-Project "K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec2979427279.vcxproj" on node 1 (default targets).
+Project "D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3436325458.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTryCompileExec2979427279.dir\Debug\".
-  Creating directory "K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTryCompileExec2979427279.dir\Debug\cmTryCom.4E7CD2DE.tlog\".
+  Creating directory "cmTryCompileExec3436325458.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec3436325458.dir\Debug\cmTryCom.35AD780E.tlog\".
 InitializeBuildStatus:
-  Creating "cmTryCompileExec2979427279.dir\Debug\cmTryCom.4E7CD2DE.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTryCompileExec3436325458.dir\Debug\cmTryCom.35AD780E.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec2979427279.dir\Debug\\" /Fd"cmTryCompileExec2979427279.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c"
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec3436325458.dir\Debug\\" /Fd"cmTryCompileExec3436325458.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c"
   Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec2979427279.dir\Debug\\" /Fd"cmTryCompileExec2979427279.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c"
+  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec3436325458.dir\Debug\\" /Fd"cmTryCompileExec3436325458.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c"
   
   CMakeCCompilerABI.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2979427279.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2979427279.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2979427279.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec2979427279.dir\Debug\CMakeCCompilerABI.obj
-  cmTryCompileExec2979427279.vcxproj -> K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2979427279.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3436325458.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3436325458.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3436325458.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec3436325458.dir\Debug\CMakeCCompilerABI.obj
+  cmTryCompileExec3436325458.vcxproj -> D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3436325458.exe
 FinalizeBuildStatus:
-  Deleting file "cmTryCompileExec2979427279.dir\Debug\cmTryCom.4E7CD2DE.tlog\unsuccessfulbuild".
-  Touching "cmTryCompileExec2979427279.dir\Debug\cmTryCom.4E7CD2DE.tlog\cmTryCompileExec2979427279.lastbuildstate".
-Done Building Project "K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec2979427279.vcxproj" (default targets).
+  Deleting file "cmTryCompileExec3436325458.dir\Debug\cmTryCom.35AD780E.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec3436325458.dir\Debug\cmTryCom.35AD780E.tlog\cmTryCompileExec3436325458.lastbuildstate".
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3436325458.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.98
+Time Elapsed 00:00:01.30
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp
+Change Dir: D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp
 
-Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec2394539940.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec1491405249.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
 Microsoft (R) Build Engine version 12.0.40629.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 11/3/2018 4:19:51 PM.
+Build started 12/19/2018 3:51:33 PM.
 The target "_ConvertPdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)" does not exist in the project, and will be ignored.
 The target "_CollectPdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)" does not exist in the project, and will be ignored.
 The target "_CollectMdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)" does not exist in the project, and will be ignored.
 The target "_CopyMdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)" does not exist in the project, and will be ignored.
-Project "K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec2394539940.vcxproj" on node 1 (default targets).
+Project "D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1491405249.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTryCompileExec2394539940.dir\Debug\".
-  Creating directory "K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTryCompileExec2394539940.dir\Debug\cmTryCom.5FE48240.tlog\".
+  Creating directory "cmTryCompileExec1491405249.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec1491405249.dir\Debug\cmTryCom.ADA44F3D.tlog\".
 InitializeBuildStatus:
-  Creating "cmTryCompileExec2394539940.dir\Debug\cmTryCom.5FE48240.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTryCompileExec1491405249.dir\Debug\cmTryCom.ADA44F3D.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec2394539940.dir\Debug\\" /Fd"cmTryCompileExec2394539940.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue testCXXCompiler.cxx
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec1491405249.dir\Debug\\" /Fd"cmTryCompileExec1491405249.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue testCXXCompiler.cxx
   Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec2394539940.dir\Debug\\" /Fd"cmTryCompileExec2394539940.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue testCXXCompiler.cxx
+  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec1491405249.dir\Debug\\" /Fd"cmTryCompileExec1491405249.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue testCXXCompiler.cxx
   
   testCXXCompiler.cxx
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2394539940.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2394539940.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2394539940.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec2394539940.dir\Debug\testCXXCompiler.obj
-  cmTryCompileExec2394539940.vcxproj -> K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2394539940.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1491405249.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1491405249.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1491405249.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec1491405249.dir\Debug\testCXXCompiler.obj
+  cmTryCompileExec1491405249.vcxproj -> D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1491405249.exe
 FinalizeBuildStatus:
-  Deleting file "cmTryCompileExec2394539940.dir\Debug\cmTryCom.5FE48240.tlog\unsuccessfulbuild".
-  Touching "cmTryCompileExec2394539940.dir\Debug\cmTryCom.5FE48240.tlog\cmTryCompileExec2394539940.lastbuildstate".
-Done Building Project "K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec2394539940.vcxproj" (default targets).
+  Deleting file "cmTryCompileExec1491405249.dir\Debug\cmTryCom.ADA44F3D.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec1491405249.dir\Debug\cmTryCom.ADA44F3D.tlog\cmTryCompileExec1491405249.lastbuildstate".
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec1491405249.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.00
+Time Elapsed 00:00:01.40
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp
+Change Dir: D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp
 
-Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec232865668.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec442780559.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
 Microsoft (R) Build Engine version 12.0.40629.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 11/3/2018 4:19:52 PM.
+Build started 12/19/2018 3:51:35 PM.
 The target "_ConvertPdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)" does not exist in the project, and will be ignored.
 The target "_CollectPdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)" does not exist in the project, and will be ignored.
 The target "_CollectMdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)" does not exist in the project, and will be ignored.
 The target "_CopyMdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)" does not exist in the project, and will be ignored.
-Project "K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec232865668.vcxproj" on node 1 (default targets).
+Project "D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec442780559.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTryCompileExec232865668.dir\Debug\".
-  Creating directory "K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTryCompileExec232865668.dir\Debug\cmTryCom.2DCCAA78.tlog\".
+  Creating directory "cmTryCompileExec442780559.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec442780559.dir\Debug\cmTryCom.A732A503.tlog\".
 InitializeBuildStatus:
-  Creating "cmTryCompileExec232865668.dir\Debug\cmTryCom.2DCCAA78.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTryCompileExec442780559.dir\Debug\cmTryCom.A732A503.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec232865668.dir\Debug\\" /Fd"cmTryCompileExec232865668.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec442780559.dir\Debug\\" /Fd"cmTryCompileExec442780559.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"
   Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec232865668.dir\Debug\\" /Fd"cmTryCompileExec232865668.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"
+  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec442780559.dir\Debug\\" /Fd"cmTryCompileExec442780559.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"
   
   CMakeCXXCompilerABI.cpp
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec232865668.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec232865668.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec232865668.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec232865668.dir\Debug\CMakeCXXCompilerABI.obj
-  cmTryCompileExec232865668.vcxproj -> K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec232865668.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec442780559.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec442780559.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec442780559.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec442780559.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTryCompileExec442780559.vcxproj -> D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec442780559.exe
 FinalizeBuildStatus:
-  Deleting file "cmTryCompileExec232865668.dir\Debug\cmTryCom.2DCCAA78.tlog\unsuccessfulbuild".
-  Touching "cmTryCompileExec232865668.dir\Debug\cmTryCom.2DCCAA78.tlog\cmTryCompileExec232865668.lastbuildstate".
-Done Building Project "K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec232865668.vcxproj" (default targets).
+  Deleting file "cmTryCompileExec442780559.dir\Debug\cmTryCom.A732A503.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec442780559.dir\Debug\cmTryCom.A732A503.tlog\cmTryCompileExec442780559.lastbuildstate".
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec442780559.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.99
+Time Elapsed 00:00:01.33
 
 
 Performing C++ SOURCE FILE Test _OPENTHREADS_ATOMIC_USE_WIN32_INTERLOCKED succeded with the following output:
-Change Dir: K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp
+Change Dir: D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp
 
-Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec3988917794.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec2882726182.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
 Microsoft (R) Build Engine version 12.0.40629.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 11/3/2018 4:20:01 PM.
+Build started 12/19/2018 3:51:47 PM.
 The target "_ConvertPdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)" does not exist in the project, and will be ignored.
 The target "_CollectPdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)" does not exist in the project, and will be ignored.
 The target "_CollectMdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)" does not exist in the project, and will be ignored.
 The target "_CopyMdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\12.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)" does not exist in the project, and will be ignored.
-Project "K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3988917794.vcxproj" on node 1 (default targets).
+Project "D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec2882726182.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTryCompileExec3988917794.dir\Debug\".
-  Creating directory "K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTryCompileExec3988917794.dir\Debug\cmTryCom.ED64A870.tlog\".
+  Creating directory "cmTryCompileExec2882726182.dir\Debug\".
+  Creating directory "D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec2882726182.dir\Debug\cmTryCom.32BEC909.tlog\".
 InitializeBuildStatus:
-  Creating "cmTryCompileExec3988917794.dir\Debug\cmTryCom.ED64A870.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTryCompileExec2882726182.dir\Debug\cmTryCom.32BEC909.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _OPENTHREADS_ATOMIC_USE_WIN32_INTERLOCKED /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3988917794.dir\Debug\\" /Fd"cmTryCompileExec3988917794.dir\Debug\vc120.pdb" /Gd /TP /wd4589 /wd4706 /wd4127 /wd4100 /analyze- /errorReport:queue src.cxx
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _OPENTHREADS_ATOMIC_USE_WIN32_INTERLOCKED /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec2882726182.dir\Debug\\" /Fd"cmTryCompileExec2882726182.dir\Debug\vc120.pdb" /Gd /TP /wd4589 /wd4706 /wd4127 /wd4100 /analyze- /errorReport:queue src.cxx
   Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _OPENTHREADS_ATOMIC_USE_WIN32_INTERLOCKED /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3988917794.dir\Debug\\" /Fd"cmTryCompileExec3988917794.dir\Debug\vc120.pdb" /Gd /TP /wd4589 /wd4706 /wd4127 /wd4100 /analyze- /errorReport:queue src.cxx
+  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W4 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _OPENTHREADS_ATOMIC_USE_WIN32_INTERLOCKED /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec2882726182.dir\Debug\\" /Fd"cmTryCompileExec2882726182.dir\Debug\vc120.pdb" /Gd /TP /wd4589 /wd4706 /wd4127 /wd4100 /analyze- /errorReport:queue src.cxx
   
   src.cxx
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3988917794.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3988917794.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3988917794.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec3988917794.dir\Debug\src.obj
-  cmTryCompileExec3988917794.vcxproj -> K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3988917794.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2882726182.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2882726182.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2882726182.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec2882726182.dir\Debug\src.obj
+  cmTryCompileExec2882726182.vcxproj -> D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2882726182.exe
 FinalizeBuildStatus:
-  Deleting file "cmTryCompileExec3988917794.dir\Debug\cmTryCom.ED64A870.tlog\unsuccessfulbuild".
-  Touching "cmTryCompileExec3988917794.dir\Debug\cmTryCom.ED64A870.tlog\cmTryCompileExec3988917794.lastbuildstate".
-Done Building Project "K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec3988917794.vcxproj" (default targets).
+  Deleting file "cmTryCompileExec2882726182.dir\Debug\cmTryCom.32BEC909.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec2882726182.dir\Debug\cmTryCom.32BEC909.tlog\cmTryCompileExec2882726182.lastbuildstate".
+Done Building Project "D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\CMakeFiles\CMakeTmp\cmTryCompileExec2882726182.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.52
+Time Elapsed 00:00:02.08
 
 Return value: 1
 Source file was:

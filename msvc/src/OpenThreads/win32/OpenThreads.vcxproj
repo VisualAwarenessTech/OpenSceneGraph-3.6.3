@@ -51,7 +51,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{76E843B0-1573-44DD-AEE5-24FDA3AC751A}</ProjectGUID>
+    <ProjectGUID>{44391EE7-4D43-4F8A-A981-FE1F9DDE2952}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>OpenThreads</ProjectName>

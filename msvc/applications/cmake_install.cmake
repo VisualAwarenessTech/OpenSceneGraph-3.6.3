@@ -1,4 +1,4 @@
-# Install script for directory: K:/Development/op3d_active/OpenSceneGraph-3.6.3/applications
+# Install script for directory: D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/applications
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,12 +29,12 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/applications/osgviewer/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/applications/osgarchive/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/applications/osgconv/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/applications/osgfilecache/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/applications/osgversion/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/applications/present3D/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/applications/osgviewer/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/applications/osgarchive/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/applications/osgconv/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/applications/osgfilecache/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/applications/osgversion/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/applications/present3D/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

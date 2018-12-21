@@ -51,7 +51,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{01234B51-0E5E-4132-AE72-1BF14DBE7F97}</ProjectGUID>
+    <ProjectGUID>{C366B098-7194-40D3-BBA5-9DE6BA8CAA1E}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>osgDB</ProjectName>
@@ -150,12 +150,12 @@
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">osg160-osgDBd</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">osg160-osgDBd</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">osg160-osgDBd</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">osg160-osgDBd</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">osg160-osgDBd</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">osg160-osgDBd</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">osg158-osgDBd</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">osg158-osgDBd</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">osg158-osgDBd</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">osg158-osgDBd</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">osg158-osgDBd</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">osg158-osgDBd</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">.dll</TargetExt>
@@ -186,12 +186,12 @@
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">osg160-osgDB</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">osg160-osgDB</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">osg160-osgDB</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">osg160-osgDB</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">osg160-osgDB</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">osg160-osgDB</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">osg158-osgDB</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">osg158-osgDB</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">osg158-osgDB</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">osg158-osgDB</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">osg158-osgDB</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">osg158-osgDB</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">.dll</TargetExt>
@@ -226,11 +226,11 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Debug";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Debug";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Debug\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Debug\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\include;..\..\..\include;..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -271,11 +271,11 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Debug";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Debug";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Debug\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Debug\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\include;..\..\..\include;..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -316,11 +316,11 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Debug";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Debug";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Debug\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Debug\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\include;..\..\..\include;..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -361,11 +361,11 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Debug";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Debug";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Debug\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Debug\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\include;..\..\..\include;..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -406,11 +406,11 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Debug";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Debug";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Debug\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Debug\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\include;..\..\..\include;..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -451,11 +451,11 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Debug";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Debug";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Debug\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;OSG_LIBRARY_POSTFIX=d;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Debug\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\include;..\..\..\include;..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -496,11 +496,11 @@
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Release";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Release";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Release\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Release\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\include;..\..\..\include;..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -541,11 +541,11 @@
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Release";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Release";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Release\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Release\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\include;..\..\..\include;..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -586,11 +586,11 @@
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Release";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Release";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Release\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Release\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\include;..\..\..\include;..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -631,11 +631,11 @@
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Release";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Release";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Release\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Release\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\include;..\..\..\include;..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -676,11 +676,11 @@
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Release";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Release";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Release\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Release\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\include;..\..\..\include;..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -721,11 +721,11 @@
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Release";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH="C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR="Release";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.7.0\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Release\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;OSGDB_LIBRARY;OSG_DEFAULT_LIBRARY_PATH=\"C:/Program Files (x86)/OpenSceneGraph/lib/osgPlugins-3.6.3\";USE_ZLIB;OSG_PLUGIN_EXTENSION=.dll;CMAKE_INTDIR=\"Release\";osgDB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\include;..\..\..\include;..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -832,13 +832,13 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OpenThreads\win32\OpenThreads.vcxproj">
-      <Project>76E843B0-1573-44DD-AEE5-24FDA3AC751A</Project>
+      <Project>44391EE7-4D43-4F8A-A981-FE1F9DDE2952</Project>
     </ProjectReference>
     <ProjectReference Include="..\osg\osg.vcxproj">
-      <Project>E97A06EA-2E0B-4EC2-BD5E-3565D39D235C</Project>
+      <Project>5C87E6F7-7E71-428F-9142-474F4B0FAC14</Project>
     </ProjectReference>
     <ProjectReference Include="..\osgUtil\osgUtil.vcxproj">
-      <Project>D6C1FAD9-EF16-4C63-B52A-1DE420EF042F</Project>
+      <Project>AD8A5F6A-9ACE-4B3B-AF18-4A43028F36C7</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

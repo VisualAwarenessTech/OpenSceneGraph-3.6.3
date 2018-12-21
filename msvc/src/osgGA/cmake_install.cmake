@@ -1,4 +1,4 @@
-# Install script for directory: K:/Development/op3d_active/OpenSceneGraph-3.6.3/src/osgGA
+# Install script for directory: D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/src/osgGA
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,69 +29,69 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph-dev")
   IF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/lib/osgGAd.lib")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/lib/osgGAd.lib")
   ELSEIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/lib/osgGA.lib")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/lib/osgGA.lib")
   ELSEIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/lib/osgGAs.lib")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/lib/osgGAs.lib")
   ELSEIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/lib/osgGArd.lib")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/lib/osgGArd.lib")
   ENDIF()
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph-dev")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph")
   IF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/bin/osg160-osgGAd.dll")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/bin/osg158-osgGAd.dll")
   ELSEIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/bin/osg160-osgGA.dll")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/bin/osg158-osgGA.dll")
   ELSEIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/bin/osg160-osgGAs.dll")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/bin/osg158-osgGAs.dll")
   ELSEIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/bin/osg160-osgGArd.dll")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/bin/osg158-osgGArd.dll")
   ENDIF()
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph")
   IF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/bin/osg160-osgGArd.pdb")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/bin/osg158-osgGArd.pdb")
   ENDIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph")
   IF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/bin/osg160-osgGAd.pdb")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/bin/osg158-osgGAd.pdb")
   ENDIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph-dev")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/osgGA" TYPE FILE FILES
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/AnimationPathManipulator"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/CameraViewSwitchManipulator"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/DriveManipulator"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/Device"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/Event"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/EventHandler"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/EventQueue"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/EventVisitor"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/Export"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/FirstPersonManipulator"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/FlightManipulator"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/GUIActionAdapter"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/GUIEventAdapter"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/GUIEventHandler"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/KeySwitchMatrixManipulator"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/CameraManipulator"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/MultiTouchTrackballManipulator"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/NodeTrackerManipulator"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/OrbitManipulator"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/StandardManipulator"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/SphericalManipulator"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/StateSetManipulator"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/TerrainManipulator"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/TrackballManipulator"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/UFOManipulator"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/Widget"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgGA/Version"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/AnimationPathManipulator"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/CameraViewSwitchManipulator"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/DriveManipulator"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/Device"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/Event"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/EventHandler"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/EventQueue"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/EventVisitor"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/Export"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/FirstPersonManipulator"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/FlightManipulator"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/GUIActionAdapter"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/GUIEventAdapter"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/GUIEventHandler"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/KeySwitchMatrixManipulator"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/CameraManipulator"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/MultiTouchTrackballManipulator"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/NodeTrackerManipulator"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/OrbitManipulator"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/StandardManipulator"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/SphericalManipulator"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/StateSetManipulator"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/TerrainManipulator"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/TrackballManipulator"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/UFOManipulator"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/Widget"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgGA/Version"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph-dev")
 

@@ -51,7 +51,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{D6C1FAD9-EF16-4C63-B52A-1DE420EF042F}</ProjectGUID>
+    <ProjectGUID>{AD8A5F6A-9ACE-4B3B-AF18-4A43028F36C7}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>osgUtil</ProjectName>
@@ -150,12 +150,12 @@
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">osg160-osgUtild</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">osg160-osgUtild</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">osg160-osgUtild</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">osg160-osgUtild</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">osg160-osgUtild</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">osg160-osgUtild</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">osg158-osgUtild</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">osg158-osgUtild</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">osg158-osgUtild</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">osg158-osgUtild</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">osg158-osgUtild</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">osg158-osgUtild</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">.dll</TargetExt>
@@ -186,12 +186,12 @@
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">osg160-osgUtil</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">osg160-osgUtil</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">osg160-osgUtil</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">osg160-osgUtil</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">osg160-osgUtil</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">osg160-osgUtil</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">osg158-osgUtil</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">osg158-osgUtil</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">osg158-osgUtil</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">osg158-osgUtil</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">osg158-osgUtil</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">osg158-osgUtil</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">.dll</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">.dll</TargetExt>
@@ -752,6 +752,14 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\graph_array.h" />
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\types.h" />
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\cache_simulator.h" />
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\policy.h" />
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\heap_array.h" />
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\connectivity_graph.h" />
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\tri_stripper.h" />
+    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\public_types.h" />
     <ClCompile Include="..\..\..\src\osgUtil\CubeMapGenerator.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\CullVisitor.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\DelaunayTriangulator.cpp" />
@@ -762,8 +770,8 @@
     <ClCompile Include="..\..\..\src\osgUtil\HalfWayMapGenerator.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\HighlightMapGenerator.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\IntersectionVisitor.cpp" />
-    <ClCompile Include="..\..\..\src\osgUtil\IncrementalCompileOperation.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\IntersectVisitor.cpp" />
+    <ClCompile Include="..\..\..\src\osgUtil\IncrementalCompileOperation.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\LineSegmentIntersector.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\MeshOptimizers.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\Optimizer.cpp" />
@@ -788,9 +796,9 @@
     <ClCompile Include="..\..\..\src\osgUtil\Tessellator.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\TransformAttributeFunctor.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\TransformCallback.cpp" />
-    <ClCompile Include="..\..\..\src\osgUtil\tristripper\src\connectivity_graph.cpp" />
-    <ClCompile Include="..\..\..\src\osgUtil\tristripper\src\policy.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\tristripper\src\tri_stripper.cpp" />
+    <ClCompile Include="..\..\..\src\osgUtil\tristripper\src\policy.cpp" />
+    <ClCompile Include="..\..\..\src\osgUtil\tristripper\src\connectivity_graph.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\TriStripVisitor.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\UpdateVisitor.cpp" />
     <ClCompile Include="..\..\..\src\osgUtil\Version.cpp" />
@@ -807,8 +815,8 @@
     <None Include="..\..\..\include\osgUtil\HalfWayMapGenerator" />
     <None Include="..\..\..\include\osgUtil\HighlightMapGenerator" />
     <None Include="..\..\..\include\osgUtil\IntersectionVisitor" />
-    <None Include="..\..\..\include\osgUtil\IncrementalCompileOperation" />
     <None Include="..\..\..\include\osgUtil\IntersectVisitor" />
+    <None Include="..\..\..\include\osgUtil\IncrementalCompileOperation" />
     <None Include="..\..\..\include\osgUtil\LineSegmentIntersector" />
     <None Include="..\..\..\include\osgUtil\MeshOptimizers" />
     <None Include="..\..\..\include\osgUtil\OperationArrayFunctor" />
@@ -841,21 +849,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OpenThreads\win32\OpenThreads.vcxproj">
-      <Project>76E843B0-1573-44DD-AEE5-24FDA3AC751A</Project>
+      <Project>44391EE7-4D43-4F8A-A981-FE1F9DDE2952</Project>
     </ProjectReference>
     <ProjectReference Include="..\osg\osg.vcxproj">
-      <Project>E97A06EA-2E0B-4EC2-BD5E-3565D39D235C</Project>
+      <Project>5C87E6F7-7E71-428F-9142-474F4B0FAC14</Project>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\cache_simulator.h" />
-    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\connectivity_graph.h" />
-    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\graph_array.h" />
-    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\heap_array.h" />
-    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\policy.h" />
-    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\detail\types.h" />
-    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\public_types.h" />
-    <ClInclude Include="..\..\..\src\osgUtil\tristripper\include\tri_stripper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

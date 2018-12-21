@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{13C4347A-21FF-47AE-89F6-2889B10C9E1A}</ProjectGUID>
+    <ProjectGUID>{839FC998-1474-4375-83BA-EBCE1875E461}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>INSTALL</ProjectName>
@@ -64,7 +64,7 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\include;K:\Development\op3d_active\OpenSceneGraph-3.6.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\include;D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -86,7 +86,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\include;K:\Development\op3d_active\OpenSceneGraph-3.6.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\include;D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -108,7 +108,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\include;K:\Development\op3d_active\OpenSceneGraph-3.6.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\include;D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -130,7 +130,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\include;K:\Development\op3d_active\OpenSceneGraph-3.6.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\include;D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -151,7 +151,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="..\..\..\CMakeFiles\9d40498d5a5a4464cec88161c67ad045\INSTALL_force.rule">
+    <CustomBuild Include="..\..\..\CMakeFiles\9b0c1789f5de231e6f6ba63c4a9107c2\INSTALL_force.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
 cd .
@@ -162,8 +162,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/CMakeFiles/9d40498d5a5a4464cec88161c67ad045/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\src\OpenThreads\win32\CMakeFiles\INSTALL_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/CMakeFiles/9b0c1789f5de231e6f6ba63c4a9107c2/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\src\OpenThreads\win32\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
@@ -175,8 +175,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/CMakeFiles/9d40498d5a5a4464cec88161c67ad045/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\src\OpenThreads\win32\CMakeFiles\INSTALL_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/CMakeFiles/9b0c1789f5de231e6f6ba63c4a9107c2/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\src\OpenThreads\win32\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
@@ -188,8 +188,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/CMakeFiles/9d40498d5a5a4464cec88161c67ad045/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\src\OpenThreads\win32\CMakeFiles\INSTALL_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/CMakeFiles/9b0c1789f5de231e6f6ba63c4a9107c2/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\src\OpenThreads\win32\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
@@ -201,14 +201,14 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/CMakeFiles/9d40498d5a5a4464cec88161c67ad045/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">K:\Development\op3d_active\OpenSceneGraph-3.6.3\msvc\src\OpenThreads\win32\CMakeFiles\INSTALL_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/CMakeFiles/9b0c1789f5de231e6f6ba63c4a9107c2/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Development\op3d_active\OpenSceneGraph-OpenSceneGraph-3.6.3\msvc\src\OpenThreads\win32\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/ALL_BUILD.vcxproj">
-      <Project>4ACB8C1F-A14D-4090-8544-37A8088A9CCE</Project>
+    <ProjectReference Include="D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/ALL_BUILD.vcxproj">
+      <Project>10BB4C80-5A05-4FB9-B0AC-7567EE863E07</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -51,7 +51,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{7274C3BE-2234-4D3B-B6ED-F73F2C5BBB0F}</ProjectGUID>
+    <ProjectGUID>{F53B0281-1E56-438F-830C-2F2EE7C7CD55}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>Applications osgviewer</ProjectName>
@@ -756,25 +756,25 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\OpenThreads\win32\OpenThreads.vcxproj">
-      <Project>76E843B0-1573-44DD-AEE5-24FDA3AC751A</Project>
+      <Project>44391EE7-4D43-4F8A-A981-FE1F9DDE2952</Project>
     </ProjectReference>
     <ProjectReference Include="..\..\src\osg\osg.vcxproj">
-      <Project>E97A06EA-2E0B-4EC2-BD5E-3565D39D235C</Project>
+      <Project>5C87E6F7-7E71-428F-9142-474F4B0FAC14</Project>
     </ProjectReference>
     <ProjectReference Include="..\..\src\osgDB\osgDB.vcxproj">
-      <Project>01234B51-0E5E-4132-AE72-1BF14DBE7F97</Project>
+      <Project>C366B098-7194-40D3-BBA5-9DE6BA8CAA1E</Project>
     </ProjectReference>
     <ProjectReference Include="..\..\src\osgGA\osgGA.vcxproj">
-      <Project>0868C706-D966-453F-9FDC-BAF68B0EA6E6</Project>
+      <Project>43985A95-CE8C-4782-B51D-612920F9B1AA</Project>
     </ProjectReference>
     <ProjectReference Include="..\..\src\osgText\osgText.vcxproj">
-      <Project>DE44FF30-BBAD-44BC-A3E9-715DE61F9462</Project>
+      <Project>C80F1C13-E51D-44EC-A7C4-8FB4DBA0E326</Project>
     </ProjectReference>
     <ProjectReference Include="..\..\src\osgUtil\osgUtil.vcxproj">
-      <Project>D6C1FAD9-EF16-4C63-B52A-1DE420EF042F</Project>
+      <Project>AD8A5F6A-9ACE-4B3B-AF18-4A43028F36C7</Project>
     </ProjectReference>
     <ProjectReference Include="..\..\src\osgViewer\osgViewer.vcxproj">
-      <Project>4A56AD7A-C887-48EC-BB2E-212E2D5EA976</Project>
+      <Project>33F3C6B8-2DEA-4A9D-91C4-84BB3AF344C6</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

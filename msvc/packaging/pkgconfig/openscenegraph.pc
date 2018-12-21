@@ -7,7 +7,7 @@ includedir=${prefix}/include
 
 Name: openscenegraph
 Description: 3D scenegraph
-Version: 3.7.0
+Version: 3.6.3
 Requires: openthreads
 Conflicts:
 Libs: -L${libdir} -losg \

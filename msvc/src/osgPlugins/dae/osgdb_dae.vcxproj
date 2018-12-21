@@ -51,7 +51,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{76EBC0A4-042D-408C-BF9C-6546A7484AE1}</ProjectGUID>
+    <ProjectGUID>{F68943F4-1FC7-4917-944F-676A58E4CAFF}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>Plugins dae</ProjectName>
@@ -138,12 +138,12 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\osgPlugins-3.6.3\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\osgPlugins-3.6.3\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\osgPlugins-3.6.3\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\osgPlugins-3.6.3\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\osgPlugins-3.6.3\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\osgPlugins-3.6.3\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
@@ -174,12 +174,12 @@
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\osgPlugins-3.6.3\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\osgPlugins-3.6.3\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\osgPlugins-3.6.3\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\osgPlugins-3.6.3\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\osgPlugins-3.6.3\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\osgPlugins-3.6.3\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
@@ -213,7 +213,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -231,10 +231,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;NO_BOOST;COLLADA_DOM_SUPPORT141;COLLADA_DOM_2_4_OR_LATER;DOM_DYNAMIC;CMAKE_INTDIR=\"Debug\";osgdb_dae_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -243,7 +243,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;osgSimd.lib;osgAnimationd.lib;collada-dom2.4.lib;opengl32.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;zlib.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;osgSimd.lib;osgAnimationd.lib;collada-dom2.4.lib;opengl32.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;osgDBd.lib;zlib.lib;osgUtild.lib;osgd.lib;OpenThreadsd.lib;opengl32.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(COLLADA_DOM_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_daed.lib</ImportLibrary>
@@ -258,7 +258,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -276,10 +276,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;NO_BOOST;COLLADA_DOM_SUPPORT141;COLLADA_DOM_2_4_OR_LATER;DOM_DYNAMIC;CMAKE_INTDIR=\"Debug\";osgdb_dae_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -288,7 +288,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;osgSimd.lib;osgAnimationd.lib;collada-dom2.4.lib;opengl32.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;zlib.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;osgSimd.lib;osgAnimationd.lib;collada-dom2.4.lib;opengl32.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;osgDBd.lib;zlib.lib;osgUtild.lib;osgd.lib;OpenThreadsd.lib;opengl32.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(COLLADA_DOM_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_daed.lib</ImportLibrary>
@@ -303,7 +303,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -321,10 +321,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;NO_BOOST;COLLADA_DOM_SUPPORT141;COLLADA_DOM_2_4_OR_LATER;DOM_DYNAMIC;CMAKE_INTDIR=\"Debug\";osgdb_dae_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -333,7 +333,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;osgSimd.lib;osgAnimationd.lib;collada-dom2.4.lib;opengl32.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;zlib.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;osgSimd.lib;osgAnimationd.lib;collada-dom2.4.lib;opengl32.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;osgDBd.lib;zlib.lib;osgUtild.lib;osgd.lib;OpenThreadsd.lib;opengl32.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(COLLADA_DOM_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_daed.lib</ImportLibrary>
@@ -348,7 +348,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -366,10 +366,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;NO_BOOST;COLLADA_DOM_SUPPORT141;COLLADA_DOM_2_4_OR_LATER;DOM_DYNAMIC;CMAKE_INTDIR=\"Debug\";osgdb_dae_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -378,7 +378,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;osgSimd.lib;osgAnimationd.lib;collada-dom2.4.lib;opengl32.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;zlib.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;osgSimd.lib;osgAnimationd.lib;collada-dom2.4.lib;opengl32.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;osgDBd.lib;zlib.lib;osgUtild.lib;osgd.lib;OpenThreadsd.lib;opengl32.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(COLLADA_DOM_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_daed.lib</ImportLibrary>
@@ -393,7 +393,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -411,10 +411,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;NO_BOOST;COLLADA_DOM_SUPPORT141;COLLADA_DOM_2_4_OR_LATER;DOM_DYNAMIC;CMAKE_INTDIR=\"Debug\";osgdb_dae_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -423,7 +423,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;osgSimd.lib;osgAnimationd.lib;collada-dom2.4.lib;opengl32.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;zlib.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;osgSimd.lib;osgAnimationd.lib;collada-dom2.4.lib;opengl32.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;osgDBd.lib;zlib.lib;osgUtild.lib;osgd.lib;OpenThreadsd.lib;opengl32.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(COLLADA_DOM_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_daed.lib</ImportLibrary>
@@ -438,7 +438,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -456,10 +456,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;NO_BOOST;COLLADA_DOM_SUPPORT141;COLLADA_DOM_2_4_OR_LATER;DOM_DYNAMIC;CMAKE_INTDIR=\"Debug\";osgdb_dae_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -468,7 +468,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;osgSimd.lib;osgAnimationd.lib;collada-dom2.4.lib;opengl32.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;zlib.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreadsd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;osgSimd.lib;osgAnimationd.lib;collada-dom2.4.lib;opengl32.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;osgDBd.lib;zlib.lib;osgUtild.lib;osgd.lib;OpenThreadsd.lib;opengl32.lib;</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(COLLADA_DOM_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_daed.lib</ImportLibrary>
@@ -483,7 +483,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
@@ -501,10 +501,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;NO_BOOST;COLLADA_DOM_SUPPORT141;COLLADA_DOM_2_4_OR_LATER;DOM_DYNAMIC;CMAKE_INTDIR=\"Release\";osgdb_dae_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -513,8 +513,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;osgSim.lib;osgAnimation.lib;collada-dom2.4.lib;opengl32.lib;osgViewer.lib;osgText.lib;osgGA.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(COLLADA_DOM_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\collada-dom-2.2\dom\projects\vc11-1.4\vc110\Win32\vs2012_Release;%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;osgSim.lib;osgAnimation.lib;collada-dom2.4.lib;opengl32.lib;osgViewer.lib;osgText.lib;osgGA.lib;osgDB.lib;zlib.lib;osgUtil.lib;osg.lib;OpenThreads.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(COLLADA_DOM_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_dae.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -528,7 +528,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
@@ -546,10 +546,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;NO_BOOST;COLLADA_DOM_SUPPORT141;COLLADA_DOM_2_4_OR_LATER;DOM_DYNAMIC;CMAKE_INTDIR=\"Release\";osgdb_dae_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -558,8 +558,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;osgSim.lib;osgAnimation.lib;collada-dom2.4.lib;opengl32.lib;osgViewer.lib;osgText.lib;osgGA.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(COLLADA_DOM_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\collada-dom-2.2\dom\projects\vc11-1.4\vc110\Win32\vs2012_Release;%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;osgSim.lib;osgAnimation.lib;collada-dom2.4.lib;opengl32.lib;osgViewer.lib;osgText.lib;osgGA.lib;osgDB.lib;zlib.lib;osgUtil.lib;osg.lib;OpenThreads.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(COLLADA_DOM_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_dae.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -573,7 +573,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
@@ -591,10 +591,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;NO_BOOST;COLLADA_DOM_SUPPORT141;COLLADA_DOM_2_4_OR_LATER;DOM_DYNAMIC;CMAKE_INTDIR=\"Release\";osgdb_dae_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -603,8 +603,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;osgSim.lib;osgAnimation.lib;collada-dom2.4.lib;opengl32.lib;osgViewer.lib;osgText.lib;osgGA.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(COLLADA_DOM_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\collada-dom-2.2\dom\projects\vc11-1.4\vc110\Win32\vs2012_Release;%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;osgSim.lib;osgAnimation.lib;collada-dom2.4.lib;opengl32.lib;osgViewer.lib;osgText.lib;osgGA.lib;osgDB.lib;zlib.lib;osgUtil.lib;osg.lib;OpenThreads.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(COLLADA_DOM_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_dae.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -618,7 +618,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
@@ -636,10 +636,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;NO_BOOST;COLLADA_DOM_SUPPORT141;COLLADA_DOM_2_4_OR_LATER;DOM_DYNAMIC;CMAKE_INTDIR=\"Release\";osgdb_dae_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -648,8 +648,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;osgSim.lib;osgAnimation.lib;collada-dom2.4.lib;opengl32.lib;osgViewer.lib;osgText.lib;osgGA.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(COLLADA_DOM_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\collada-dom-2.2\dom\projects\vc11-1.4\vc110\Win32\vs2012_Release;%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;osgSim.lib;osgAnimation.lib;collada-dom2.4.lib;opengl32.lib;osgViewer.lib;osgText.lib;osgGA.lib;osgDB.lib;zlib.lib;osgUtil.lib;osg.lib;OpenThreads.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(COLLADA_DOM_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_dae.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -663,7 +663,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
@@ -681,10 +681,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;NO_BOOST;COLLADA_DOM_SUPPORT141;COLLADA_DOM_2_4_OR_LATER;DOM_DYNAMIC;CMAKE_INTDIR=\"Release\";osgdb_dae_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -693,8 +693,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;osgSim.lib;osgAnimation.lib;collada-dom2.4.lib;opengl32.lib;osgViewer.lib;osgText.lib;osgGA.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(COLLADA_DOM_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\collada-dom-2.2\dom\projects\vc11-1.4\vc110\Win32\vs2012_Release;%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;osgSim.lib;osgAnimation.lib;collada-dom2.4.lib;opengl32.lib;osgViewer.lib;osgText.lib;osgGA.lib;osgDB.lib;zlib.lib;osgUtil.lib;osg.lib;OpenThreads.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(COLLADA_DOM_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_dae.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -708,7 +708,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4589;4706;4127;4100</DisableSpecificWarnings>
@@ -726,10 +726,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0602;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;NO_BOOST;COLLADA_DOM_SUPPORT141;COLLADA_DOM_2_4_OR_LATER;DOM_DYNAMIC;CMAKE_INTDIR=\"Release\";osgdb_dae_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\collada-dom-2.2\dom\include;..\..\..\..\..\collada-dom-2.2\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include;..\..\..\..\..\$(COLLADA_DOM_DIR)\dom\include\1.4;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -738,8 +738,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;osgSim.lib;osgAnimation.lib;collada-dom2.4.lib;opengl32.lib;osgViewer.lib;osgText.lib;osgGA.lib;zlib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(COLLADA_DOM_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\collada-dom-2.2\dom\projects\vc11-1.4\vc110\Win32\vs2012_Release;%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;osgSim.lib;osgAnimation.lib;collada-dom2.4.lib;opengl32.lib;osgViewer.lib;osgText.lib;osgGA.lib;osgDB.lib;zlib.lib;osgUtil.lib;osg.lib;OpenThreads.lib;opengl32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(COLLADA_DOM_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)osgdb_dae.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -775,31 +775,31 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\OpenThreads\win32\OpenThreads.vcxproj">
-      <Project>76E843B0-1573-44DD-AEE5-24FDA3AC751A</Project>
+      <Project>44391EE7-4D43-4F8A-A981-FE1F9DDE2952</Project>
     </ProjectReference>
     <ProjectReference Include="..\..\osg\osg.vcxproj">
-      <Project>E97A06EA-2E0B-4EC2-BD5E-3565D39D235C</Project>
+      <Project>5C87E6F7-7E71-428F-9142-474F4B0FAC14</Project>
     </ProjectReference>
     <ProjectReference Include="..\..\osgAnimation\osgAnimation.vcxproj">
-      <Project>8E526D53-22AC-4A87-898F-3B5457B29CF1</Project>
+      <Project>808DCB8B-2713-49DB-9569-853457D08804</Project>
     </ProjectReference>
     <ProjectReference Include="..\..\osgDB\osgDB.vcxproj">
-      <Project>01234B51-0E5E-4132-AE72-1BF14DBE7F97</Project>
+      <Project>C366B098-7194-40D3-BBA5-9DE6BA8CAA1E</Project>
     </ProjectReference>
     <ProjectReference Include="..\..\osgGA\osgGA.vcxproj">
-      <Project>0868C706-D966-453F-9FDC-BAF68B0EA6E6</Project>
+      <Project>43985A95-CE8C-4782-B51D-612920F9B1AA</Project>
     </ProjectReference>
     <ProjectReference Include="..\..\osgSim\osgSim.vcxproj">
-      <Project>8C3BB897-1924-4DCE-97BC-4620F8D33EB9</Project>
+      <Project>F9F3E3AB-04F6-4322-BC5B-02D642F6B66C</Project>
     </ProjectReference>
     <ProjectReference Include="..\..\osgText\osgText.vcxproj">
-      <Project>DE44FF30-BBAD-44BC-A3E9-715DE61F9462</Project>
+      <Project>C80F1C13-E51D-44EC-A7C4-8FB4DBA0E326</Project>
     </ProjectReference>
     <ProjectReference Include="..\..\osgUtil\osgUtil.vcxproj">
-      <Project>D6C1FAD9-EF16-4C63-B52A-1DE420EF042F</Project>
+      <Project>AD8A5F6A-9ACE-4B3B-AF18-4A43028F36C7</Project>
     </ProjectReference>
     <ProjectReference Include="..\..\osgViewer\osgViewer.vcxproj">
-      <Project>4A56AD7A-C887-48EC-BB2E-212E2D5EA976</Project>
+      <Project>33F3C6B8-2DEA-4A9D-91C4-84BB3AF344C6</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

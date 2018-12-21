@@ -1,4 +1,4 @@
-# Install script for directory: K:/Development/op3d_active/OpenSceneGraph-3.6.3/src/osgShadow
+# Install script for directory: D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/src/osgShadow
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,61 +29,61 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph-dev")
   IF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/lib/osgShadowd.lib")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/lib/osgShadowd.lib")
   ELSEIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/lib/osgShadow.lib")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/lib/osgShadow.lib")
   ELSEIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/lib/osgShadows.lib")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/lib/osgShadows.lib")
   ELSEIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/lib/osgShadowrd.lib")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/lib/osgShadowrd.lib")
   ENDIF()
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph-dev")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph")
   IF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/bin/osg160-osgShadowd.dll")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/bin/osg158-osgShadowd.dll")
   ELSEIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/bin/osg160-osgShadow.dll")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/bin/osg158-osgShadow.dll")
   ELSEIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/bin/osg160-osgShadows.dll")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/bin/osg158-osgShadows.dll")
   ELSEIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/bin/osg160-osgShadowrd.dll")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/bin/osg158-osgShadowrd.dll")
   ENDIF()
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph")
   IF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/bin/osg160-osgShadowrd.pdb")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/bin/osg158-osgShadowrd.pdb")
   ENDIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph")
   IF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/bin/osg160-osgShadowd.pdb")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE FILES "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/bin/osg158-osgShadowd.pdb")
   ENDIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph-dev")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/osgShadow" TYPE FILE FILES
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgShadow/Export"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgShadow/ShadowMap"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgShadow/ShadowTechnique"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgShadow/ShadowTexture"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgShadow/ShadowedScene"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgShadow/ShadowSettings"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgShadow/SoftShadowMap"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgShadow/ParallelSplitShadowMap"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgShadow/Version"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgShadow/ConvexPolyhedron"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgShadow/DebugShadowMap"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgShadow/LightSpacePerspectiveShadowMap"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgShadow/MinimalCullBoundsShadowMap"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgShadow/MinimalDrawBoundsShadowMap"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgShadow/MinimalShadowMap"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgShadow/ProjectionShadowMap"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgShadow/StandardShadowMap"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgShadow/ViewDependentShadowTechnique"
-    "K:/Development/op3d_active/OpenSceneGraph-3.6.3/include/osgShadow/ViewDependentShadowMap"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgShadow/Export"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgShadow/ShadowMap"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgShadow/ShadowTechnique"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgShadow/ShadowTexture"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgShadow/ShadowedScene"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgShadow/ShadowSettings"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgShadow/SoftShadowMap"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgShadow/ParallelSplitShadowMap"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgShadow/Version"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgShadow/ConvexPolyhedron"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgShadow/DebugShadowMap"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgShadow/LightSpacePerspectiveShadowMap"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgShadow/MinimalCullBoundsShadowMap"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgShadow/MinimalDrawBoundsShadowMap"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgShadow/MinimalShadowMap"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgShadow/ProjectionShadowMap"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgShadow/StandardShadowMap"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgShadow/ViewDependentShadowTechnique"
+    "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/include/osgShadow/ViewDependentShadowMap"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libopenscenegraph-dev")
 

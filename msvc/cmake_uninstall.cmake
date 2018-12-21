@@ -1,8 +1,8 @@
-IF(NOT EXISTS "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/install_manifest.txt")
-    MESSAGE(FATAL_ERROR "Cannot find install manifest: \"K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/install_manifest.txt\"")
+IF(NOT EXISTS "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/install_manifest.txt")
+    MESSAGE(FATAL_ERROR "Cannot find install manifest: \"D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/install_manifest.txt\"")
 ENDIF()
 
-FILE(READ "K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/install_manifest.txt" files)
+FILE(READ "D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/install_manifest.txt" files)
 STRING(REGEX REPLACE "\n" ";" files "${files}")
 
 FOREACH(file ${files})

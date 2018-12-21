@@ -1,4 +1,4 @@
-# Install script for directory: K:/Development/op3d_active/OpenSceneGraph-3.6.3/src/osgWrappers/serializers
+# Install script for directory: D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/src/osgWrappers/serializers
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,20 +29,20 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osg/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgUtil/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgAnimation/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgFX/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgManipulator/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgParticle/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgSim/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgShadow/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgGA/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgTerrain/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgText/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgVolume/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgViewer/cmake_install.cmake")
-  INCLUDE("K:/Development/op3d_active/OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgUI/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osg/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgUtil/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgAnimation/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgFX/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgManipulator/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgParticle/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgSim/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgShadow/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgGA/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgTerrain/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgText/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgVolume/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgViewer/cmake_install.cmake")
+  INCLUDE("D:/Development/op3d_active/OpenSceneGraph-OpenSceneGraph-3.6.3/msvc/src/osgWrappers/serializers/osgUI/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
