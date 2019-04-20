@@ -433,12 +433,14 @@ protected:
                     _primaryColor = document.getColorPool()->getColor(primaryNameIndex);
 
                 else // >= VERSION_15_1
-                    _primaryColor = document.getColorPool()->getColor(primaryColorIndex);
+					_primaryColor = osg::Vec4(1, 1, 1, 1);
+//				_primaryColor = document.getColorPool()->getColor(primaryColorIndex);
             }
         }
 
         // Lighting
-        stateset->setMode(GL_LIGHTING, isLit() ? osg::StateAttribute::ON : osg::StateAttribute::OFF);
+		bool lit = isLit();
+        stateset->setMode(GL_LIGHTING, lit ? osg::StateAttribute::ON : osg::StateAttribute::OFF);
 
         // Material
         if (isLit() || materialIndex>=0)
@@ -447,15 +449,23 @@ protected:
             // http://www.multigen-paradigm.com/ubb/Forum1/HTML/000228.html
             osg::Vec4 col = _primaryColor;
             col.a() = 1.0f - getTransparency();
+#if 0
+			if (materialIndex < 0)
+			{
+				if (document.getOrCreateMaterialPool()->size() > 0)
+					materialIndex = 0;
+			}
+#endif
             osg::Material* material = document.getOrCreateMaterialPool()->getOrCreateMaterial(materialIndex,col);
             stateset->setAttribute(material);
         }
 
         // IRColor (IRC)
-        if (document.getPreserveNonOsgAttrsAsUserData() && 0 != IRColor)
-        {
+//      if (document.getPreserveNonOsgAttrsAsUserData() && 0 != IRColor)
+		if(0 != IRColor)
+		{
           _geometry->setUserValue("<UA:IRC>", IRColor);
-        }
+		}
 
         // IR Material ID (IRM)
         if (document.getPreserveNonOsgAttrsAsUserData() && 0 != IRMaterial)
@@ -464,14 +474,16 @@ protected:
         }
 
         // surface (SMC)
-        if (document.getPreserveNonOsgAttrsAsUserData() && 0 != surface)
-        {
+//      if (document.getPreserveNonOsgAttrsAsUserData() && 0 != surface)
+		if (0 != surface)
+		{
           _geometry->setUserValue("<UA:SMC>", surface);
         }
 
         // feature (FID)
-        if (document.getPreserveNonOsgAttrsAsUserData() && 0 != feature)
-        {
+//		if (document.getPreserveNonOsgAttrsAsUserData() && 0 != feature)
+		if (0 != feature)
+		{
           _geometry->setUserValue("<UA:FID>", feature);
         }
  
@@ -548,6 +560,17 @@ protected:
         if (_parent.valid())
             _parent->addChild(*_geode);
     }
+
+	//The following module forces the linker to not have udefines for these functions in exportGeometryRecoreds
+	virtual void noRecord()
+	{
+		_geometry = new osg::Geometry;
+		int32 IRColor;
+		_geometry->getUserValue("<UA:IRC>", IRColor);
+		int16 Surface;
+		_geometry->getUserValue("<UA:SMC>", Surface);
+
+	}
 
     osg::PrimitiveSet::Mode getPrimitiveSetMode(int numVertices)
     {
@@ -975,7 +998,7 @@ protected:
         int materialIndex = in.readInt16(-1);
         int16 surface = in.readInt16();
         int16 feature = in.readInt16();
-        int32 IRMaterial = in.readInt32(-1);
+		int32 IRMaterial = in.readInt32();
         _transparency = in.readUInt16(0);
         // version > 13
         /*uint8 influenceLOD =*/ in.readUInt8();

@@ -249,8 +249,11 @@ class FLTReaderWriter : public ReaderWriter
             supportsOption( "validate", "Export option: If present in the Options string, the plugin does not write an OpenFlight file. Instead, it returns an indication of the scene graph's suitability for OpenFlight export." );
             supportsOption( "tempDir=<dir>", "Export option: Specifies the directory to use for creation of temporary files. If not specified, the directory is taken from the file name. If the file doesn't contain a path, the current working directory is used. Applications should set this to the name of their app-specific temp directory. If the path contains spaces, use double quotes to ensure correct parsing. Examples: \"tempDir=/tmp\", \"tempDir=\"C:\\My Temp Dir\"." );
             supportsOption( "lighting=<ON|OFF>", "Export option: Specifies a default enable/disable state for lighting, for Nodes in the exported scene graph that don't set it explicitly. By default, the exporter assumes lighting is enabled (GL_LIGHTING ON). Set this to either ON or OFF. Example: \"lighting=OFF\"." );
-            supportsOption( "stripTextureFilePath", "Export option: If present in the Options string, the exporter strips the path from texture file names, and writes only the texture file name to the FLT Texture Palette. By default, the exporter doesn't strip the path, and the name written to the Texture Palette is taken directly from the osg::Image object referenced by the osg::Texture2D StateAttribute." );
-        }
+			supportsOption("stripTextureFilePath", "Export option: If present in the Options string, the exporter strips the path from texture file names, and writes only the texture file name to the FLT Texture Palette. By default, the exporter doesn't strip the path, and the name written to the Texture Palette is taken directly from the osg::Image object referenced by the osg::Texture2D StateAttribute.");
+			supportsOption("TextureInArchive", "Import option: If present in the Options string, an archive name is located in the dbpath. When this option is present textures are mapped to and read from the named archive file according to the CDB specification");
+			supportsOption("Remap2Directory", "Import option: If present in the Options string, directory names are parsed from the dbpath. When this option is present textures are mapped to and read from the named directory according to the CDB specification");
+			supportsOption("CDBVerification", "Import option: If present in the Options string, CDB Rules Messages are output durring model load. When this option is present textures are mapped to and read from the named directory according to the CDB specification");
+		}
 
         virtual const char* className() const { return "FLT Reader/Writer"; }
 
@@ -360,6 +363,9 @@ class FLTReaderWriter : public ReaderWriter
 
 				document.setRemap2Directory((options->getOptionString().find("Remap2Directory") != std::string::npos));
 				OSG_DEBUG << readerMsg << "Remap2Directory=" << document.getRemap2Directory() << std::endl;
+
+				document.setCDB_Verify((options->getOptionString().find("CDBVerification") != std::string::npos));
+				OSG_DEBUG << readerMsg << "CDBVerification" << document.getRemap2Directory() << std::endl;
 
 				document.setPreserveFace((options->getOptionString().find("preserveFace")!=std::string::npos));
                 OSG_DEBUG << readerMsg << "preserveFace=" << document.getPreserveFace() << std::endl;
@@ -473,7 +479,8 @@ class FLTReaderWriter : public ReaderWriter
 								break;
 							}
 						}
-					}
+						document.SetModelExportTextureDirectory(dbpaths[1], dbpaths[0]);
+					}					
 					else
 						document.setRemap2Directory(false);
 				}
@@ -586,7 +593,14 @@ class FLTReaderWriter : public ReaderWriter
 
 			if (document.getTextureInArchive())
 				document.archiveRelease();
+			if (document.getCDB_Verify())
+			{
+				if (!document.getCDBModel_Has_Sigsize())
+				{
+					OSG_WARN << "Model File did not contain Significant Size Information" << std::endl;
 
+				}
+			}
             return document.getHeaderNode();
         }
 

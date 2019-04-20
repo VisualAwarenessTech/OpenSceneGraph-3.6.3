@@ -220,9 +220,9 @@ protected:
         material->setDiffuse (osg::Material::FRONT_AND_BACK,osg::Vec4(diffuse,alpha));
         material->setSpecular(osg::Material::FRONT_AND_BACK,osg::Vec4(specular,alpha));
         material->setEmission(osg::Material::FRONT_AND_BACK,osg::Vec4(emissive,alpha));
-
+        
         if (shininess>=0.0f)
-        {
+        {        
             material->setShininess(osg::Material::FRONT_AND_BACK,shininess);
         }
         else
@@ -276,7 +276,7 @@ protected:
             material->setEmission(osg::Material::FRONT_AND_BACK,osg::Vec4(emissive,alpha));
 
             if (shininess>=0.0f)
-            {
+            {        
                 material->setShininess(osg::Material::FRONT_AND_BACK,shininess);
             }
             else
@@ -492,19 +492,72 @@ protected:
 
         // Need full path for unique key in local texture cache.
 		std::string pathname;
+		bool missingmessagesent = false;
+		bool checkgt = false;
 		if (document.getTextureInArchive())
 		{
 			std::string archivePath = filename;
+			if (document.getCDB_Verify())
+			{
+				size_t bpos = archivePath.find("_D902");
+				if (bpos != std::string::npos)
+				{
+					OSG_WARN << "Texture File " << filename << " " << archivePath << " contains invalid dataset key" << std::endl;
+				}
+			}
 			if (document.MapTextureName2Archive(archivePath))
 			{
 				pathname = document.archive_findDataFile(archivePath);
+				if (document.getCDB_Verify() && pathname.empty())
+				{
+					OSG_WARN << "Texture " << filename << " " << archivePath << " in archive " << document.ArchiveFileName() << " Checking GT Directory " << std::endl;
+					checkgt = true;
+				}
+				//Ok if it is not in the archive then look for it as a geotypical texture
 				if(pathname.empty())
 					pathname = osgDB::findDataFile(filename, document.getOptions());
-				if(pathname.empty())
-					OSG_WARN << "Texture File " << filename << " " << archivePath <<" not found GT Tex or in archive" << std::endl;
+				if (document.getCDB_Verify() && !pathname.empty())
+				{
+					if (checkgt)
+					{
+						OSG_WARN << "Texture " << filename << " Found as GT Texture " << std::endl;
+					}
+				}
+				//If you change the format of the next message you must make an equivalent chagne in CCDB_Model_Mgr
+				//Do not change the start of the line "Texture File" as it is a key in the osgNotifyHandler
+				if (pathname.empty())
+				{
+					std::string otherArchivePath = filename;
+					pathname = document.archive_findOtherArchive(otherArchivePath);
+					if (!pathname.empty())
+					{
+						if (document.getCDB_Verify())
+						{
+							OSG_WARN << "Texture File " << filename << " " << archivePath << " not found GT Tex or in archive " << document.ArchiveFileName() << " found in alternate archive" << std::endl;
+							missingmessagesent = true;
+						}
+					}
+					else
+					{
+						OSG_WARN << "Texture File " << filename << " " << archivePath << " not found GT Tex or in archive " << document.ArchiveFileName() <<  " Not found in alternate archive"  << std::endl;
+						missingmessagesent = true;
+					}
+				}
 			}
 			else
-				pathname = osgDB::findDataFile(filename, document.getOptions());;
+			{
+				if (document.getCDB_Verify())
+				{
+					OSG_WARN << "Texture " << filename << " Was not mapped to archive " << std::endl;
+				}
+				pathname = osgDB::findDataFile(filename, document.getOptions());
+				if (pathname.empty())
+				{
+					OSG_WARN << "Texture File " << filename << " not mapped to " << archivePath << " not found in GT Tex " << document.ArchiveFileName() << std::endl;
+					missingmessagesent = true;
+				}
+
+			}
 		}
 		else if (document.getRemap2Directory())
 		{
@@ -521,7 +574,13 @@ protected:
  
 		if (pathname.empty())
         {
-            OSG_WARN << "Can't find texture (" << index << ") " << filename << std::endl;
+			if (!missingmessagesent)
+			{
+				if(document.getCDB_Verify())
+					OSG_WARN << "Missing Texture texture (" << index << ") " << filename << std::endl;
+				else
+					OSG_WARN << "Can't find texture (" << index << ") " << filename << std::endl;
+			}
             return;
         }
 
